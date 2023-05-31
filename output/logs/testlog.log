@@ -2156,3 +2156,14 @@
 2023-05-31 00:30:53,171 - logger_file -INFO - Review headline entered
 2023-05-31 00:30:53,289 - logger_file -INFO - I would recommed this to my family was entered as review
 2023-05-31 00:30:53,352 - logger_file -INFO - Add your review button was clicked
+2023-05-31 02:38:46,761 - logger_file -INFO - Retail Website opened and verified
+2023-05-31 02:38:46,862 - logger_file -INFO - user cliked on Sign In option
+2023-05-31 02:38:46,869 - logger_file -INFO - user logged in into account
+2023-05-31 02:38:47,053 - logger_file -INFO - user entered email and password
+2023-05-31 02:38:47,113 - logger_file -INFO - user clicked on login button
+2023-05-31 02:38:49,113 - logger_file -INFO - Retail Website opened and verified
+2023-05-31 02:38:49,196 - logger_file -INFO - user cliked on Sign In option
+2023-05-31 02:38:49,203 - logger_file -INFO - user logged in into account
+2023-05-31 02:38:49,269 - logger_file -INFO - User click on Create New Account button
+2023-05-31 02:38:49,573 - logger_file -INFO - Registration Info Entered
+2023-05-31 02:38:49,643 - logger_file -INFO - User click on Create New Account button
