@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @updateProfileAndPhone #PASSED WIH NO ISSUE
   Scenario: Verify User can update Profile Information
     #When User click on Account option
-    And User update Name 'Ali Khan Jan' and Phone '203-101-7854'
+    And User update Name 'Ali Khan Jan khan' and Phone '203-101-1000'
     And User click on Update button
     Then user profile information should be updated
     
@@ -28,26 +28,26 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber      | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255246666| Ali Jan    |9               |2027            |227           |
+      | 1212541255247777| Ali Jan    |9               |2027            |227           |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
     
 @editPaymentMethod #passed with no issue
   Scenario: Verify User can edit Debit or Credit card
     #When User click on Account option
-    And User select the card ending with '6666'
+    And User select the card ending with '7777'
     And User select the payment Card
     And User click on Edit option of card section
     And user edit information with below data
       | cardNumber           | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255218888     |capstone    |11               |2027            |459           |
+      | 1212541255219999     |capstone    |11               |2027            |459           |
     And user click on Update Your Card button
     Then a message should be displayed Payment Method updated Successfully
     
 @removePaymentMethod #Passed with no issue
   Scenario: Verify User can remove Debit or Credit card
     #When User click on Account option
-    And User select the card ending with '8888'
+    And User select the card ending with '9999'
     And User click on remove option of card section
     Then payment details should be removed
     
