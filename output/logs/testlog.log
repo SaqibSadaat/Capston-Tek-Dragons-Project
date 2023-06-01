@@ -2178,3 +2178,14 @@
 2023-05-31 02:53:01,044 - logger_file -INFO - User click on Create New Account button
 2023-05-31 02:53:01,245 - logger_file -INFO - Registration Info Entered
 2023-05-31 02:53:01,513 - logger_file -INFO - User click on Create New Account button
+2023-05-31 20:46:24,675 - logger_file -INFO - Retail Website opened and verified
+2023-05-31 20:46:24,828 - logger_file -INFO - user cliked on Sign In option
+2023-05-31 20:46:24,839 - logger_file -INFO - user logged in into account
+2023-05-31 20:46:25,317 - logger_file -INFO - user entered email and password
+2023-05-31 20:46:25,477 - logger_file -INFO - user clicked on login button
+2023-05-31 20:46:27,831 - logger_file -INFO - Retail Website opened and verified
+2023-05-31 20:46:28,003 - logger_file -INFO - user cliked on Sign In option
+2023-05-31 20:46:28,014 - logger_file -INFO - user logged in into account
+2023-05-31 20:46:28,117 - logger_file -INFO - User click on Create New Account button
+2023-05-31 20:46:28,613 - logger_file -INFO - Registration Info Entered
+2023-05-31 20:46:28,713 - logger_file -INFO - User click on Create New Account button
