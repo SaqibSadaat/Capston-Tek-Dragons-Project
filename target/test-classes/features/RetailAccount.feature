@@ -28,26 +28,26 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber      | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255245555| Ali Jan    |9               |2027            |227           |
+      | 1212541255246666| Ali Jan    |9               |2027            |227           |
     And User click on Add your card button
     Then a message should be displayed 'Payment Method added sucessfully'
     
 @editPaymentMethod #passed with no issue
   Scenario: Verify User can edit Debit or Credit card
     #When User click on Account option
-    And User select the card ending with '5555'
+    And User select the card ending with '6666'
     And User select the payment Card
     And User click on Edit option of card section
     And user edit information with below data
       | cardNumber           | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255212552     |capstone    |11               |2027            |459           |
+      | 1212541255218888     |capstone    |11               |2027            |459           |
     And user click on Update Your Card button
     Then a message should be displayed Payment Method updated Successfully
     
 @removePaymentMethod #Passed with no issue
   Scenario: Verify User can remove Debit or Credit card
     #When User click on Account option
-    And User select the card ending with '2547'
+    And User select the card ending with '8888'
     And User click on remove option of card section
     Then payment details should be removed
     
