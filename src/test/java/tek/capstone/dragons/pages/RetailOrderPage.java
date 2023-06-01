@@ -41,8 +41,8 @@ public class RetailOrderPage extends CommonUtility {
 	@FindBy(xpath = "/html/body/div/div[1]/div[1]/div[3]/div/div/div[1]/p")
 	public WebElement orderPlacedThanks;
 	
-	//@cancelOrder #this is has issue and even sir Emal Ramin was 
-	// not able to figure it out. so it is still pending...
+	//@cancelOrder 
+	
 	@FindBy(css = "html body div#root div.main-container div div.bg-gray-100 div.cancel__confirm-wrapper div.cancel__confirm div div.cancel__confirm-message p")
 	public WebElement orderCancelationMessage;
 	@FindBy(xpath = "//*[@id=\"reasonInput\"]")
@@ -72,22 +72,23 @@ public class RetailOrderPage extends CommonUtility {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
     
-	@FindBy(xpath ="//*[@id=\"root\"]/div[1]/div[1]/div[3]/div/div/div[1]/div/div[2]/div/p[2]")
-	public WebElement firstOrderClicked;
-	@FindBy(xpath ="//*[@id=\"returnBtn\"]")
-	public WebElement returnOderBttn;
-	@FindBy(xpath ="//*[@id=\"reasonInput\"]")
-	public WebElement selectReasonDropdwon;
-	@FindBy(xpath ="//*[@id=\"reasonInput\"]/option[3]")
-	public WebElement itemDamaged;
-	@FindBy(xpath ="//*[@id=\"dropOffInput\"]")
-	public WebElement dropOffServiceDropdwon;
-	@FindBy(xpath ="//*[@id=\"dropOffInput\"]/option[3]")
-	public WebElement fedexOption;
-	@FindBy(xpath ="//*[@id=\"cancelForm\"]/div/div[2]/div[1]")
-	public WebElement orderRuturnBttn;
-	@FindBy(xpath ="//*[@id=\"root\"]/div[1]/div[1]/div[3]/div/div/div/p")
-	public WebElement returnMssg;
+ // @ReturnOrder
+ 		//  Scenario: Verify User can Return the order
+ 		
+ 	    @FindBy(id="returnBtn")
+ 	    public WebElement returnbtn;
+ 		    
+ 	    @FindBy(id ="reasonInput")
+ 	    public WebElement inputreason;
+ 	    
+ 	    @FindBy(id = "dropOffInput")
+ 	    public WebElement dropOfInput;
+ 		    
+ 	    @FindBy(id = "orderSubmitBtn")
+ 	    public WebElement returnButton;
+ 		    
+ 	    @FindBy(xpath="//p[text()='Return was successfull']")
+ 	    public WebElement yourOrderReturn;
 	
 	/// Review 
 	

@@ -43,15 +43,13 @@ Feature: Retail Order Page
     And User select the cancelation Reason 'Bought wrong item'
     And User click on Cancel Order button
     Then A cancelation message should be displayed 'Your Order Has Been Cancelled'
-@returnOrder # passed with no issue
+ @ReturnOrder
   Scenario: Verify User can Return the order
-    And User click on Orders section
-    And User click on first order in list
     And User click on Return Items button
-    And User select the Return Reason 'Item damaged'
+    And User select the Return 'Item damaged'
     And User select the drop off service 'FedEx'
     And User click on Return Order button
-    Then a Return message should be displayed 'Return was successfull'
+    Then a cancelation message should be displayed Return was successful
 @orderReview #passed with no issue
   Scenario: Verify User can write a review on order placed
     And User click on Orders section

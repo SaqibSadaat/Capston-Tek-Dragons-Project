@@ -44,77 +44,99 @@ public class RetailAccountSteps extends CommonUtility {
 		logger.info("user profile information updated");
 	}
 	
-	@When("User click on Add a payment method link")
-	public void userClickOnAddAPaymentMethodLink() {
-	    click(factory.accountPage().paymentMethod);
-	    logger.info("User click on Add a payment method link");
-	    
+	@And("User click on Add a payment method link")
+	public void userClickOnAddAPaymentMethodLink () {
+		click(factory.accountPage().AddaPaymentMethod);
+		logger.info("user clicked on Add Payment");	
 	}
-	@When("User fill Debit or credit card information")
-	public void userFillDebitOrCreditCardInformation(DataTable dataTable) {
-	   List<Map<String, String>> debitOrCredit = dataTable.asMaps(String.class, String.class);
-	   sendText(factory.accountPage().cardNumberInput, debitOrCredit.get(0).get("cardNumber"));
-	   sendText(factory.accountPage().nameCardInputField, debitOrCredit.get(0).get("nameOnCard"));
-	   selectByVisibleText(factory.accountPage().expiratiMonthInput, debitOrCredit.get(0).get("expirationMonth"));
-	   selectByVisibleText(factory.accountPage().expiratiYear, debitOrCredit.get(0).get("expirationYear"));
-	   sendText(factory.accountPage().securityCode, debitOrCredit.get(0).get("securityCode"));
-	   logger.info("User entered card payment information successfully");
+	@And("User fill Debit or credit card information")
+	public void userFillDebitOrCreditCardInfo (DataTable data ) {
+		List<Map<String, String>> debitOrcredit =data.asMaps(String.class,String.class);
+		sendText(factory.accountPage().CardInput,debitOrcredit.get(0).get("cardNumber"));
+		sendText(factory.accountPage().NameInput,debitOrcredit.get(0).get("nameOnCard"));
+		selectByVisibleText(factory.accountPage().MonthInput,debitOrcredit.get(0).get("expirationMonth"));
+		selectByVisibleText(factory.accountPage().YearInput,debitOrcredit.get(0).get("expirationYear"));
+		sendText(factory.accountPage().SecurityInput,debitOrcredit.get(0).get("securityCode"));
+			
+	}
+	@And("User click on Add your Card button")
+	public void userClickOnAddYoutCardBtn () {
+		click(factory.accountPage().AddYourCardbtn);
+		logger.info("user clicked on add card btn");	
+	}
+
+	@Then("a message should be displayed Payment Method added successfully")
+	public void aMsgShouldBeDisplayed() {
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().PaymentMethodAddedSuccessfully));
+		logger.info("Payment Method added successfully");
 	}
 	
+	//@updateCrad
 	
-	@When("User click on Add your card button")
-	public void userClickOnAddYourCardButton() {
-	    click(factory.accountPage().paymentSubmitBtn);
-	    logger.info("Add your card button was clicked successfully");
+	@And("User select the payment Card")
+	public void userSelectedThePaymentCard() {
+		click(factory.accountPage().SelectedpaymentCard);
+		logger.info("User clicked on payment card");
+		slowDown();
 	}
-	@Then("a message should be displayed {string}")
-	public void aMessageShouldBeDisplayed(String expectedMssg) {
-		if(expectedMssg.contains("Payment")) {
-			waitTillPresence(factory.accountPage().paymentMethodAddedSuccessfully);
-	    Assert.assertEquals(expectedMssg, factory.accountPage().paymentMethodAddedSuccessfully.getText());
-	    logger.info(expectedMssg + " is displayed");
-		}else if(expectedMssg.contains("Address")) {
-			waitTillPresence(factory.accountPage().addressAddedSuccessfullyMssg);
-			Assert.assertEquals(expectedMssg, factory.accountPage().addressAddedSuccessfullyMssg.getText());
-			logger.info(expectedMssg + " is displayed"); 
-		}else if(expectedMssg.contains("Payment Method updated")) {
-			waitTillPresence(factory.accountPage().paymentMethodAddedSuccessfully);
-			Assert.assertEquals(expectedMssg, factory.accountPage().paymentMethodAddedSuccessfully.getText());
-			logger.info("Payment Method updated mssg was verified successfully");
-			}else if(expectedMssg.contains("order placed")) {
-				waitTillPresence(factory.orderPage().orderPlacedSuccessfulyMssg);
-				Assert.assertEquals(expectedMssg, factory.orderPage().orderPlacedSuccessfulyMssg.getText());
-				logger.info(expectedMssg + " Message was verified successfully");
-			}
+	@And("User click on Edit option of card section")
+	public void userClickonEditOption () {
+		click(factory.accountPage().Edit);
+		logger.info("user clicked on Edit");
+		
 	}
-	// removePaymentMethod
 	
-		@When("User select the card ending with {string}")
-		public void userSelectTheCardEndingWith(String string) {
-			List<WebElement> cards = factory.accountPage().cardEndingNum;
-			for(WebElement card : cards) {
-				if(card.getText().contains(string)) {
-					click(card);
-					logger.info(string + " is selected");
-					break;
-					}
-		   
-			}
+	@And("user edit information with below data")
+	public void userEnterTheData(DataTable data) {
+		clearTextUsingSendKeys(factory.accountPage().CardNumber);
+		clearTextUsingSendKeys(factory.accountPage().NameOnCard);
+		clearTextUsingSendKeys(factory.accountPage().SecurityCode);
+		
+		
+		List<Map<String, String>> editBttn =data.asMaps(String.class,String.class);
+		
+		sendText(factory.accountPage().CardNumber,editBttn.get(0).get("cardNumber"));
+		sendText(factory.accountPage().NameOnCard,editBttn.get(0).get("nameOnCard"));
+		selectByVisibleText(factory.accountPage().MonthInput,editBttn.get(0).get("expirationMonth"));
+		selectByVisibleText(factory.accountPage().YearInput,editBttn.get(0).get("expirationYear"));
+		sendText(factory.accountPage().SecurityCode,editBttn.get(0).get("securityCode"));
+		logger.info("user successfully entred the info");
+		slowDown();
+	}
+	
+	@And("user click on Update Your Card button")
+	public void userClickonUpdateBttn () {
+		click(factory.accountPage().UpdateCardBtn);
+		logger.info("user clicked on updateBttn");
+	}
+	
+	@Then("a message should be displayed Payment Method updated Successfully")
+	public void aMessageShouldBeDisplayed() {
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().PaymentMethodupdatedSuccessfully));
+		logger.info("Payment Method added successfully");
+	
+	}
+	
+	//@removeCard
+		//  Scenario: Verify User can remove Debit or Credit card
+		
+		@And("User click on remove option of card section")
+		public void userClickOnRemoveCardfromList () {
+			click(factory.accountPage().Remove);
+			logger.info("User clicked on remove option");
+			slowDown();
 			
 		}
-	@And("User click on remove option of card section")
-	public void userClickOnRemoveCardfromList () {
-	click(factory.accountPage().removeCardBttn);
-	logger.info("User clicked on remove option");
-	slowDown();
-}
-
-	@Then("payment details should be removed")
-	public void paymentdetailsShouldBeRemoved () {
-	//Assert.assertTrue(isElementDisplayed(factory.accountpage().Account)); There is no msg to validate.
-	logger.info("Details removed successfully");
-		    
+		
+		@Then("payment details should be removed")
+		public void paymentdetailsShouldBeRemoved () {
+		//	Assert.assertTrue(isElementDisplayed(factory.accountpage().Account)); There is no msg to validate.
+			logger.info("Details removed successfully");
 		}
+		
+		
 	// add address 
 		
 		@When("User click on Add address option")
@@ -148,52 +170,52 @@ public class RetailAccountSteps extends CommonUtility {
 }
 		// Edit credit debit card 
 		
-		@And("User select the payment Card")
-		public void userSelectedThePaymentCard() {
-		click(factory.accountPage().SelectedpaymentCard);
-		logger.info("User clicked on payment card");
-		slowDown();
-		}
-		
-		@And("User click on Edit option of card section")
-		public void userClickonEditOption () {
-		click(factory.accountPage().creditDebitCardEditBttn);
-		logger.info("user clicked on Edit");
-		   
-		}
-		
-		@And("user edit information with below data")
-		public void userEnterTheData(DataTable data) {
-		clearTextUsingSendKeys(factory.accountPage().cardNumberInput);
-		clearTextUsingSendKeys(factory.accountPage().nameCardInputField);
-		clearTextUsingSendKeys(factory.accountPage().securityCode);
+//		@And("User select the payment Card")
+//		public void userSelectedThePaymentCard() {
+//		click(factory.accountPage().SelectedpaymentCard);
+//		logger.info("User clicked on payment card");
+//		slowDown();
+//		}
+//		
+//		@And("User click on Edit option of card section")
+//		public void userClickonEditOption () {
+//		click(factory.accountPage().creditDebitCardEditBttn);
+//		logger.info("user clicked on Edit");
+//		   
+//		}
+//		
+//		@And("user edit information with below data")
+//		public void userEnterTheData(DataTable data) {
+//		clearTextUsingSendKeys(factory.accountPage().CardInput);
+//		clearTextUsingSendKeys(factory.accountPage().nameCardInputField);
+//		clearTextUsingSendKeys(factory.accountPage().securityCode);
+//
+//
+//		List<Map<String, String>> editBttn =data.asMaps(String.class,String.class);
+//
+//		sendText(factory.accountPage().CardInput,editBttn.get(0).get("cardNumber"));
+//		sendText(factory.accountPage().nameCardInputField,editBttn.get(0).get("nameOnCard"));
+//		selectByVisibleText(factory.accountPage().expiratiMonthInput,editBttn.get(0).get("expirationMonth"));
+//		selectByVisibleText(factory.accountPage().expiratiYear,editBttn.get(0).get("expirationYear"));
+//		sendText(factory.accountPage().securityCode,editBttn.get(0).get("securityCode"));
+//		logger.info("user successfully entred the info");
+//		slowDown();    
+//		}
+//		
+//		@And("user click on Update Your Card button")
+//		public void userClickonUpdateBttn () {
+//		click(factory.accountPage().paymentSubmitBtn);
+//		logger.info("user clicked on updateBttn");
+//		   
+//		}
+//		
+//		@Then("a message should be displayed Payment Method updated Successfully")
+//		public void aMessageShouldBeDisplayed() {
+//		slowDown();
+//		Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentMethodAddedSuccessfully));
+//		logger.info("Payment Method added successfully");
 
-
-		List<Map<String, String>> editBttn =data.asMaps(String.class,String.class);
-
-		sendText(factory.accountPage().cardNumberInput,editBttn.get(0).get("cardNumber"));
-		sendText(factory.accountPage().nameCardInputField,editBttn.get(0).get("nameOnCard"));
-		selectByVisibleText(factory.accountPage().expiratiMonthInput,editBttn.get(0).get("expirationMonth"));
-		selectByVisibleText(factory.accountPage().expiratiYear,editBttn.get(0).get("expirationYear"));
-		sendText(factory.accountPage().securityCode,editBttn.get(0).get("securityCode"));
-		logger.info("user successfully entred the info");
-		slowDown();    
-		}
-		
-		@And("user click on Update Your Card button")
-		public void userClickonUpdateBttn () {
-		click(factory.accountPage().paymentSubmitBtn);
-		logger.info("user clicked on updateBttn");
-		   
-		}
-		
-		@Then("a message should be displayed Payment Method updated Successfully")
-		public void aMessageShouldBeDisplayed() {
-		slowDown();
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentMethodAddedSuccessfully));
-		logger.info("Payment Method added successfully");
-
-		}
+//		}
 		
 		//@addressUpdated 
 		

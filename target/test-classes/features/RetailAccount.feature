@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @updateProfileAndPhone #PASSED WIH NO ISSUE
   Scenario: Verify User can update Profile Information
     #When User click on Account option
-    And User update Name 'Ali Khan Jan khan' and Phone '203-101-1000'
+    And User update Name 'Ali Khan' and Phone '203-101-8001'
     And User click on Update button
     Then user profile information should be updated
     
@@ -22,32 +22,28 @@ Feature: Retail Account Page
     #|Aliza123*23|Aliza12*343|Ali*za12*343|
     #And User click on change password button
     #Then A message should be displayed password changed successfully 
-@paymentMethod #passed with no issue
+  @payment
   Scenario: Verify User can add a payment method
-    #When User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
-      | cardNumber      | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255247777| Ali Jan    |9               |2027            |227           |
-    And User click on Add your card button
-    Then a message should be displayed 'Payment Method added sucessfully'
+      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
+      | 7362853654616666 | Ranzoor     |              12 |           2025 |          657 |
+    And User click on Add your Card button
+    Then a message should be displayed Payment Method added successfully
     
-@editPaymentMethod #passed with no issue
+@updateCrad
   Scenario: Verify User can edit Debit or Credit card
-    #When User click on Account option
-    And User select the card ending with '7777'
     And User select the payment Card
     And User click on Edit option of card section
     And user edit information with below data
-      | cardNumber           | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1212541255219999     |capstone    |11               |2027            |459           |
+      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
+      | 7362859624951547 | Ali    |              12 |           2026 |          158 |
     And user click on Update Your Card button
-    Then a message should be displayed Payment Method updated Successfully
+    Then a message should be displayed Payment Method updated Successfull
     
-@removePaymentMethod #Passed with no issue
+ @removeCard
   Scenario: Verify User can remove Debit or Credit card
-    #When User click on Account option
-    And User select the card ending with '9999'
+    And User select the payment Card
     And User click on remove option of card section
     Then payment details should be removed
     

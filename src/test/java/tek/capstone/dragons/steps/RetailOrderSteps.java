@@ -185,40 +185,45 @@ public class RetailOrderSteps extends CommonUtility {
 		//////////////////////////////////////////////////////////////////////////////////////////////////////
 	   
 	}
-	//@returnOrder myself done 
-	
-	
-	@And("User click on Return Items button")
-	public void userClickOnReturnItemsButton() {
-		click(factory.orderPage().returnOderBttn);
-		logger.info("return button was clicked successfully");
-	   
-}
-	@And("User select the Return Reason {string}")
-	public void userSelectTheReturnReason(String itemDamaged) {
-		selectByVisibleText(factory.orderPage().selectReasonDropdwon, itemDamaged);
-		logger.info(itemDamaged + " reason was selected successfully");
-	    
-	}
-	@And("User select the drop off service {string}")
-	public void userSelectTheDropOffService(String fedexOption) {
-		selectByVisibleText(factory.orderPage().dropOffServiceDropdwon, fedexOption);
-		logger.info(fedexOption + " select drop off option successfully");
-	   
-	}
-	@And("User click on Return Order button")
-	public void userClickOnReturnOrderButton() {
-		click(factory.orderPage().orderRuturnBttn);
-		logger.info("return button clicked successfully");
-		///////////////////////////////////////////////////
-	}
-		@Then("a Return message should be displayed {string}")
-		public void aReturnMessageShouldBeDisplayed(String string) {
-			Assert.assertTrue(isElementDisplayed(factory.orderPage().returnMssg));
-			logger.info(string + " was successfully displyed");
+	// @ReturnOrder
+		//  Scenario: Verify User can Return the order
+		
+		@And("User click on Return Items button")
+		public void userClickedonReturnItemsBttn() {
+			click(factory.orderPage().returnbtn);
+			logger.info("User clicked on Return Items Button");
+			
+		}
+		
+		@And("User select the Return {string}")
+		public void userSelectTheReturnReasonDamaged(String RID) {
+			sendText(factory.orderPage().inputreason,RID);
+			logger.info("User Select Reason Item Damaged");
+			
+		}
+		
+		@And("User select the drop off service {string}")
+		public void userSelecttheDropOfFedex(String fedex) {
+			sendText(factory.orderPage().dropOfInput,fedex);
+			logger.info("User select the drop off as Fedex");
+			
+		}
+		
+		@And("User click on Return Order button")
+		public void userClickedOnReturnOrderBtn() {
+			click(factory.orderPage().returnButton);
+			logger.info("User click on Return Order button");
+			
+		}
+		
+		@Then("a cancelation message should be displayed Return was successful")
+		public void aMsg_should_BePresentAs_returnWassuccessful() {
+			Assert.assertTrue(isElementDisplayed(factory.orderPage().yourOrderReturn));
+			logger.info("A cancelation message popped up on the top of the page");
+		}
 	   /////////////////////////////////////
 			// Review scenario
-	}
+
 		@When("User click on Review button")
 		public void userClickOnReviewButton() {
 			click(factory.orderPage().reviewButton);

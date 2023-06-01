@@ -2192,3 +2192,11 @@
 2023-05-31 22:43:36,235 - logger_file -INFO - user is on retail website
 2023-05-31 22:43:36,349 - logger_file -INFO - User clicked on All Section successfully
 2023-05-31 22:43:36,379 - logger_file -INFO - options Electronics, Computers, Smart Home, Sports and Automative are present
+2023-06-01 16:36:26,825 - logger_file -INFO - user is on retail website
+2023-06-01 16:36:27,019 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 16:36:27,294 - logger_file -INFO - user entered email and password
+2023-06-01 16:36:27,397 - logger_file -INFO - user clicked on login button
+2023-06-01 16:36:27,404 - logger_file -INFO - user logged in into account
+2023-06-01 16:36:27,961 - logger_file -INFO - user clicked on Account option
+2023-06-01 16:36:28,094 - logger_file -INFO - user clicked on Add Payment
+2023-06-01 16:36:28,808 - logger_file -INFO - user clicked on add card btn
