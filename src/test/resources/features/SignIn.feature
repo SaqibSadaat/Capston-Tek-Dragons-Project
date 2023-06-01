@@ -1,4 +1,3 @@
-@RetialSignIn/SingUpScenario
 Feature: Sign in/Sign Up Feature
 
   Background: 

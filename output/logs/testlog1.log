@@ -2189,3 +2189,6 @@
 2023-05-31 20:46:28,117 [main] INFO logger_file - User click on Create New Account button
 2023-05-31 20:46:28,613 [main] INFO logger_file - Registration Info Entered
 2023-05-31 20:46:28,713 [main] INFO logger_file - User click on Create New Account button
+2023-05-31 22:43:36,235 [main] INFO logger_file - user is on retail website
+2023-05-31 22:43:36,349 [main] INFO logger_file - User clicked on All Section successfully
+2023-05-31 22:43:36,379 [main] INFO logger_file - options Electronics, Computers, Smart Home, Sports and Automative are present
