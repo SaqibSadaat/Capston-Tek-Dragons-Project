@@ -10,7 +10,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 //@RunWith is JUnit Annotation
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@ReturnOrder",
+		tags = "",
 		features = ("classpath:features"),
 		glue = "tek.capstone.dragons",
 		dryRun = false,

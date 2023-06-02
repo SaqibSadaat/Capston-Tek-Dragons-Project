@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @updateProfileAndPhone #PASSED WIH NO ISSUE
   Scenario: Verify User can update Profile Information
     #When User click on Account option
-    And User update Name 'Ali Khannn' and Phone '203-101-8003'
+    And User update Name 'Ali Khannns' and Phone '203-101-8004'
     And User click on Update button
     Then user profile information should be updated
     
