@@ -41,76 +41,64 @@ public class RetailOrderPage extends CommonUtility {
 	@FindBy(xpath = "/html/body/div/div[1]/div[1]/div[3]/div/div/div[1]/p")
 	public WebElement orderPlacedThanks;
 	
-	//@cancelOrder 
-	
-	@FindBy(css = "html body div#root div.main-container div div.bg-gray-100 div.cancel__confirm-wrapper div.cancel__confirm div div.cancel__confirm-message p")
-	public WebElement orderCancelationMessage;
-	@FindBy(xpath = "//*[@id=\"reasonInput\"]")
-	public WebElement cancelReasonSelect;
+	//Background:
+	 
+    @FindBy(id="signinLink")
+	public WebElement signIn;
+	@FindBy(id="email")
+	public WebElement emailField;
+	@FindBy(id="password")
+	public WebElement passwrodField;
+	@FindBy(xpath = "//button[@type='submit']")
+	public WebElement logIn;
+	@FindBy(id="orderLink")
+	public WebElement orderbttn;
+	@FindBy(xpath="//p[text()='Show Details']")
+	public WebElement showdetails;
 	@FindBy(id ="orderLink")
 	public WebElement orderLink;
-//	@FindBy(xpath ="//div[@class='order__header']")
-//	public List<WebElement> listOfOrders;
-	@FindBy(xpath = "//*[@id=\"root\"]/div[1]/div[1]/div[3]/div/div/div[1]/div[1]/div[2]/div/p[2]")
-	public WebElement orderDetailHiddenOrderDisplayed;
-//	@FindBy(id ="cancelBtn")
-//	public WebElement cancelBttn;
-	@FindBy(xpath ="//*[@id=\"reasonInput\"]/option[2]")
-	public WebElement cancellationReason;
-	@FindBy(id ="orderSubmitBtn")
-	public WebElement cancelSubmitBttn;
-//	@FindBy(xpath ="//*[@id=\"root\"]/div[1]/div[1]/div[3]/div/div/div[1]/div[1]/p")
-//	public WebElement yourOrderCanelledMssg;
 	
+	// @CancelOrder
+	//  Scenario: Verify User can cancel the order
+			
+	@FindBy(id="cancelBtn")
+    public WebElement cancelbttn;		
+	@FindBy(id="reasonInput")
+    public WebElement reason;		
+	@FindBy(id="orderSubmitBtn")
+	public WebElement cancelOrderBttn;		
+	@FindBy(xpath="//p[text()='Your Order Has Been Cancelled']")
+	public WebElement yourOrderHasBeenCancelled;
+				
+			
+	// @ReturnOrder
+    //  Scenario: Verify User can Return the order
+			
+	@FindBy(id="returnBtn")
+	public WebElement returnbtn;		    
+	@FindBy(id ="reasonInput")
+    public WebElement inputreason;	    
+    @FindBy(id = "dropOffInput")
+	public WebElement dropOfInput;		    
+	@FindBy(id = "orderSubmitBtn")
+	public WebElement returnButton;		    
+    @FindBy(xpath="//p[text()='Return was successfull']")
+    public WebElement yourOrderReturn;
 
-    @FindBy(xpath = "//div[@class='order']//descendant::p[7]")
-	public List<WebElement> listOfOrder;
-    @FindBy(xpath = "//div[@class='order']//descendant::button[@id='cancelBtn']")
-    public List<WebElement> cancelbttn;
-    @FindBy(xpath = "//*[@id=\"root\"]/div[1]/div[1]/div[3]/div/div/div[1]/div/div[2]/div/p[2]")
-    public WebElement showDetails;
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-    
- // @ReturnOrder
- 		//  Scenario: Verify User can Return the order
- 		
- 	    @FindBy(id="returnBtn")
- 	    public WebElement returnbtn;
- 		    
- 	    @FindBy(id ="reasonInput")
- 	    public WebElement inputreason;
- 	    
- 	    @FindBy(id = "dropOffInput")
- 	    public WebElement dropOfInput;
- 		    
- 	    @FindBy(id = "orderSubmitBtn")
- 	    public WebElement returnButton;
- 		    
- 	    @FindBy(xpath="//p[text()='Return was successfull']")
- 	    public WebElement yourOrderReturn;
-	
-	/// Review 
-	
-	@FindBy(css = "#reviewBtn")
-	public WebElement reviewButton;
-	
-	@FindBy(css = "#headlineInput")
-	public WebElement reviewHeadlineBox;
-	
-	@FindBy(css = "#descriptionInput")
-	public WebElement reviewBodyBox;
-	
-	@FindBy(css = "#reviewSubmitBtn")
-	public WebElement addYourReviewButton;
-	
+    //@WrittingReview
+	// Scenario: Verify User can write a review on order placed
+		    
+	@FindBy(id = "reviewBtn")
+	public WebElement reviewBtn;	    
+	@FindBy(id = "headlineInput")
+	public WebElement headlineInput;	    
 	@FindBy(id = "descriptionInput")
-	public WebElement reviewBody;
-	
-	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]")
-	public WebElement reviewSuccessMessage;
-	
-	
-	
-	
-}
+	public WebElement descriptionInput;	    
+	@FindBy(id = "reviewSubmitBtn")
+	public WebElement reviewSubmitBtn;	    
+	@FindBy(xpath="//div[text()='Your review was added successfully']")
+	public WebElement Msg;
+			
+	 
+	}

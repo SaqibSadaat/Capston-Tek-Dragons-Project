@@ -2542,3 +2542,71 @@
 2023-06-01 21:50:12,430 [main] INFO logger_file - User select the drop off as Fedex
 2023-06-01 21:50:12,486 [main] INFO logger_file - User click on Return Order button
 2023-06-01 21:50:12,890 [main] INFO logger_file - A cancelation message popped up on the top of the page
+2023-06-01 23:02:09,969 [main] INFO logger_file - user is on retail website
+2023-06-01 23:02:10,057 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:02:10,230 [main] INFO logger_file - user entered email and password
+2023-06-01 23:02:10,289 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:02:10,294 [main] INFO logger_file - user logged in into account
+2023-06-01 23:02:11,177 [main] INFO logger_file - Order link was clicked successfuly
+2023-06-01 23:10:09,701 [main] INFO logger_file - user is on retail website
+2023-06-01 23:10:09,786 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:10:09,959 [main] INFO logger_file - user entered email and password
+2023-06-01 23:10:10,018 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:10:10,023 [main] INFO logger_file - user logged in into account
+2023-06-01 23:10:10,404 [main] INFO logger_file - Order link was clicked successfuly
+2023-06-01 23:10:22,709 [main] INFO logger_file - Cancel the order button was clicked Successfully
+2023-06-01 23:10:22,786 [main] INFO logger_file - Bought wrong item was selected as reason
+2023-06-01 23:10:22,844 [main] INFO logger_file - Cancel submit button was clicked successfully
+2023-06-01 23:10:23,054 [main] INFO logger_file - Your Order Has Been Cancelled , was displayed
+2023-06-01 23:11:35,261 [main] INFO logger_file - user is on retail website
+2023-06-01 23:11:35,340 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:11:35,510 [main] INFO logger_file - user entered email and password
+2023-06-01 23:11:35,569 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:11:35,573 [main] INFO logger_file - user logged in into account
+2023-06-01 23:11:35,963 [main] INFO logger_file - Order link was clicked successfuly
+2023-06-01 23:11:41,674 [main] INFO logger_file - Cancel the order button was clicked Successfully
+2023-06-01 23:11:41,744 [main] INFO logger_file - Bought wrong item was selected as reason
+2023-06-01 23:11:41,796 [main] INFO logger_file - Cancel submit button was clicked successfully
+2023-06-01 23:11:42,014 [main] INFO logger_file - Your Order Has Been Cancelled , was displayed
+2023-06-01 23:21:09,075 [main] INFO logger_file - user is on retail website
+2023-06-01 23:21:09,160 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:21:09,335 [main] INFO logger_file - user entered email and password
+2023-06-01 23:21:09,396 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:21:09,400 [main] INFO logger_file - user logged in into account
+2023-06-01 23:22:21,269 [main] INFO logger_file - user is on retail website
+2023-06-01 23:22:21,351 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:22:21,529 [main] INFO logger_file - user entered email and password
+2023-06-01 23:22:21,588 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:22:21,594 [main] INFO logger_file - user logged in into account
+2023-06-01 23:25:24,187 [main] INFO logger_file - user is on retail website
+2023-06-01 23:25:24,268 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:25:24,442 [main] INFO logger_file - user entered email and password
+2023-06-01 23:25:24,499 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:25:24,504 [main] INFO logger_file - user logged in into account
+2023-06-01 23:27:29,079 [main] INFO logger_file - user is on retail website
+2023-06-01 23:27:29,161 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:27:29,332 [main] INFO logger_file - user entered email and password
+2023-06-01 23:27:29,391 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:27:29,397 [main] INFO logger_file - user logged in into account
+2023-06-01 23:30:58,808 [main] INFO logger_file - user is on retail website
+2023-06-01 23:30:58,895 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:30:59,073 [main] INFO logger_file - user entered email and password
+2023-06-01 23:30:59,132 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:30:59,138 [main] INFO logger_file - user logged in into account
+2023-06-01 23:30:59,525 [main] INFO logger_file - User clicked on Order Section
+2023-06-01 23:31:00,085 [main] INFO logger_file - User clicked on first order from the list
+2023-06-01 23:31:00,162 [main] INFO logger_file - User clicked on Cancel The Order Button
+2023-06-01 23:31:00,224 [main] INFO logger_file - User picked 'Bought Wrong Item' from list
+2023-06-01 23:31:00,281 [main] INFO logger_file - User clicked on 'Cancel Order Button
+2023-06-01 23:31:00,609 [main] INFO logger_file - A message displayed as 'Your Order Has Been Cancelled'
+2023-06-01 23:31:54,131 [main] INFO logger_file - user is on retail website
+2023-06-01 23:31:54,214 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 23:31:54,393 [main] INFO logger_file - user entered email and password
+2023-06-01 23:31:54,453 [main] INFO logger_file - user clicked on login button
+2023-06-01 23:31:54,458 [main] INFO logger_file - user logged in into account
+2023-06-01 23:31:54,879 [main] INFO logger_file - User clicked on Order Section
+2023-06-01 23:31:55,409 [main] INFO logger_file - User clicked on first order from the list
+2023-06-01 23:31:55,484 [main] INFO logger_file - User click on Review Button
+2023-06-01 23:31:55,679 [main] INFO logger_file - User write review on headline and review text
+2023-06-01 23:31:55,739 [main] INFO logger_file - User click add review button
+2023-06-01 23:32:00,767 [main] INFO logger_file - A message diplayed Your Review Was Added Successfully

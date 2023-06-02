@@ -105,169 +105,119 @@ public class RetailOrderSteps extends CommonUtility {
 //		logger.info("Payment Method added successfully");
 //	}
 	
+	@And("User click on Orders section")
+	public void userClickOnOrderSection() {
+		click(factory.orderPage().orderbttn);
+		logger.info("User clicked on Order Section");
+		
+	}
+	
+	@And("User click on first order in list")
+	public void userClickOnFirstOrderInList() {
+		click(factory.orderPage().showdetails);
+		logger.info("User clicked on first order from the list");
+	    
+	}
 	//@cancelOrder 
 	
-	@When("User click on Orders section")
-	public void userClickOnOrdersSection() {
-		click(factory.orderPage().orderLink);
-		logger.info("Order link was clicked successfuly");
-	    
-	}
-
-	@When("User click on first order in list")
-	public void userClickOnFirstOrderInList() {
-	List<WebElement> listOfOrders = factory.orderPage().listOfOrder;
-	for (int i = 0; i < listOfOrders.size(); i++) {
-	if (listOfOrders.get(i).getText().equalsIgnoreCase("Hide Details")) {
-
-	} else if (listOfOrders.get(i).getText().equalsIgnoreCase("Show Details")) {
-	click(factory.orderPage().showDetails);
-	}
-	}
-	}
-
-
-	@When("User click on Cancel The Order button")
-	public void userClickOnCancelTheOrderButton() {
-	List<WebElement> listOfCencelOptions = factory.orderPage().cancelbttn;
-	for (int i = 0; i < listOfCencelOptions.size(); i++) {
-	click(listOfCencelOptions.get(0));
-	
-	logger.info("Cancel the order button was clicked Successfully");
-	break;
-	}
-	}
-//	@When("User click on first order in list")
-//	public void userClickOnFirstOrderInList() {
-//		List<WebElement> listOfOrders =factory.orderPage().listOfOrders;
-//		for(int i =0; i< listOfOrders.size(); i++) {
-//			if(listOfOrders.get(i).getText().equalsIgnoreCase("Hide Details")) {
-//				if (factory.orderPage().cancelBttn.isDisplayed()) {
-//					clickElementWithJS(factory.orderPage().cancelBttn);
-//					break;
-//				}
-//			} else {
-//				click(factory.orderPage().orderDetailHiddenOrderDisplayed);
-//				if(factory.orderPage().cancelBttn.isDisplayed()) {
-//					clickElementWithJS(factory.orderPage().cancelBttn);
-//					break;
-//				}
-//			
-//				}
-//			}
-//		}  
-//	
-//	@When("User click on Cancel The Order button")
-//	public void userClickOnCancelTheOrderButton() {
-//		click(factory.orderPage().cancelBttn);
-//		logger.info("Cancel the ordere button was clicked successfully");
-//	}
-
-//	@When("User select the cancelation Reason {string}")
-//	public void userSelectTheCancelationReasonBoughtWrongItem(String cancellationReason) {
-//		selectByVisibleText(factory.orderPage().cancellationReason, cancellationReason);
-//		logger.info(cancellationReason + " reason was selected successfully");
-	    
-	@When("User select the cancelation Reason {string}")
-	public void userSelectTheCancelationReason(String cancelationReason) {
-		selectByValue(factory.orderPage().cancelReasonSelect, "wrong");
-		logger.info(cancelationReason + " was selected as reason");
-	}
-	@When("User click on Cancel Order button")
-	public void userClickOnCancelOrderButton() {
-		click(factory.orderPage().cancelSubmitBttn);
-		logger.info("Cancel submit button was clicked successfully");
-	    
+	@And("User click on Cancel The Order button")
+	public void userClickOnCanceltheOrderButton() {
+		click(factory.orderPage().cancelbttn);
+		logger.info("User clicked on Cancel The Order Button");
 	}
 	
-	@Then("A cancelation message should be displayed {string}")
-	public void aCancelationMessageShouldBeDisplayed(String cancelationMessage) {
-		Assert.assertTrue(isElementDisplayed(factory.orderPage().orderCancelationMessage));
-		logger.info(cancelationMessage + " , was displayed");
-		slowDown();
-//	@Then("a cancelation message should be displayed {string}")
-//	public void aCancelationMessageShouldBeDisplayed(String yourOrderCanelledMssg) {
-//		Assert.assertEquals(yourOrderCanelledMssg, factory.orderPage().yourOrderCanelledMssg);
-//		logger.info(yourOrderCanelledMssg + " was verified successfully");
-		//////////////////////////////////////////////////////////////////////////////////////////////////////
-	   
+	@And("User select the cancelation Reason {string}")
+	public void userSelectBoughtWrongItem(String BWI) {
+		sendText(factory.orderPage().reason,BWI);
+		logger.info("User picked 'Bought Wrong Item' from list");
+		
 	}
+	
+	@And("User click on Cancel Order button")
+	public void userClickOnCancelOrderButtn() {
+		click(factory.orderPage().cancelOrderBttn);
+		logger.info("User clicked on 'Cancel Order Button");
+		
+	}
+	
+	@Then("a cancelation message should be displayed Your Order Has Been Cancelled")
+	public void aCancelationMsgShouldBeDisplayed() {
+		Assert.assertTrue(isElementDisplayed(factory.orderPage().yourOrderHasBeenCancelled));
+		logger.info("A message displayed as 'Your Order Has Been Cancelled'");
+			
+	}
+	
 	// @ReturnOrder
-		//  Scenario: Verify User can Return the order
+	//  Scenario: Verify User can Return the order
+	
+	@And("User click on Return Items button")
+	public void userClickedonReturnItemsBttn() {
+		click(factory.orderPage().returnbtn);
+		logger.info("User clicked on Return Items Button");
 		
-		@And("User click on Return Items button")
-		public void userClickedonReturnItemsBttn() {
-			click(factory.orderPage().returnbtn);
-			logger.info("User clicked on Return Items Button");
-			
-		}
-		
-		@And("User select the Return {string}")
-		public void userSelectTheReturnReasonDamaged(String RID) {
-			sendText(factory.orderPage().inputreason,RID);
-			logger.info("User Select Reason Item Damaged");
-			
-		}
-		
-		@And("User select the drop off service {string}")
-		public void userSelecttheDropOfFedex(String fedex) {
-			sendText(factory.orderPage().dropOfInput,fedex);
-			logger.info("User select the drop off as Fedex");
-			
-		}
-		
-		@And("User click on Return Order button")
-		public void userClickedOnReturnOrderBtn() {
-			click(factory.orderPage().returnButton);
-			logger.info("User click on Return Order button");
-			
-		}
-		
-		@Then("a cancelation message should be displayed Return was successful")
-		public void aMsg_should_BePresentAs_returnWassuccessful() {
-			Assert.assertTrue(isElementDisplayed(factory.orderPage().yourOrderReturn));
-			logger.info("A cancelation message popped up on the top of the page");
-		}
-	   /////////////////////////////////////
-			// Review scenario
-
-		@When("User click on Review button")
-		public void userClickOnReviewButton() {
-			click(factory.orderPage().reviewButton);
-			logger.info("Review button was clicked");
-		}
-
-		@When("User write Review headline {string}")
-		public void userWriteReviewHeadline(String reviewHeadline) {
-			sendText(factory.orderPage().reviewHeadlineBox, reviewHeadline);
-			logger.info("Review headline entered");
-		}
-		
-		@When("User write Review Body {string}")
-		public void userWriteReviewBody(String reviewBody) {
-			sendText(factory.orderPage().reviewBody, reviewBody);
-			logger.info(reviewBody + " was entered as review");
-		}
-
-		@When("User click Add your Review button")
-		public void userClickAddYourReviewButton() {
-			click(factory.orderPage().addYourReviewButton);
-			logger.info("Add your review button was clicked");
-		}
-
-		@Then("A review message should be displayed {string}")
-		public void aReviewMessageShouldBeDisplayed(String reviewSuccessMessage) {
-			waitTillPresence(factory.orderPage().reviewSuccessMessage);
-			Assert.assertTrue(isElementDisplayed(factory.orderPage().reviewSuccessMessage));
-			
-		}
-
-
-
 	}
+	
+	@And("User select the Return {string}")
+	public void userSelectTheReturnReasonDamaged(String RID) {
+		sendText(factory.orderPage().inputreason,RID);
+		logger.info("User Select Reason Item Damaged");
+		
+	}
+	
+	@And("User select the drop off service {string}")
+	public void userSelecttheDropOfFedex(String fedex) {
+		sendText(factory.orderPage().dropOfInput,fedex);
+		logger.info("User select the drop off as Fedex");
+		
+	}
+	
+	@And("User click on Return Order button")
+	public void userClickedOnReturnOrderBtn() {
+		click(factory.orderPage().returnButton);
+		logger.info("User click on Return Order button");
+		
+	}
+	
+	@Then("a cancelation message should be displayed Return was successful")
+	public void aMsg_should_BePresentAs_returnWassuccessful() {
+		Assert.assertTrue(isElementDisplayed(factory.orderPage().yourOrderReturn));
+		logger.info("A cancelation message popped up on the top of the page");
+	}
+	
+	
+	
+	//@WrittingReview
+	//  Scenario: Verify User can write a review on order placed
+	
+	@And("User click on Review button")
+	public void userClickedOnReviewButton() {
+		click(factory.orderPage().reviewBtn);
+		logger.info("User click on Review Button");
+		
+	}
+	
+	@And("User write Review headline {string} and {string}")
+	public void userWriteAReview(String headline, String text ) {
+		sendText(factory.orderPage().headlineInput,headline);
+		sendText(factory.orderPage().descriptionInput,text);
+		logger.info("User write review on headline and review text");
+		
+	}
+	
+	@And("User click Add your Review button")
+	public void userClickedAddYourReviewButton() {
+		click(factory.orderPage().reviewSubmitBtn);
+		logger.info("User click add review button");
+		
+	}
+	
+	@Then("a review message should be displayed Your review was added successfully")
+	public void aMsgShouldBeDipsplayed() {
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.orderPage().Msg));
+		logger.info("A message diplayed Your Review Was Added Successfully");
+		
+	}
+	
 
-	   
-	 
-
-
-
+}

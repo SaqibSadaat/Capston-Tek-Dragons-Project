@@ -32,32 +32,24 @@ Feature: Retail Order Page
     #And User click on Proceed to Checkout button
     #And User click on Place Your Order
     #Then a message should be displayed Order Placed, Thanks
-@cancelOrder #passed with no issue
+@CancelOrder
   Scenario: Verify User can cancel the order
-    #Given User is on retail website
-    #When User click on Sign in option
-    #And User enter email 'EmailValue' and password 'PasswordValue'
-    #And User click on login button
-    #And User should be logged in into Account
-    #And User click on Orders section
-    #And User click on first order in list
     And User click on Cancel The Order button
     And User select the cancelation Reason 'Bought wrong item'
     And User click on Cancel Order button
-    Then A cancelation message should be displayed 'Your Order Has Been Cancelled'
- @ReturnOrder
+    Then a cancelation message should be displayed Your Order Has Been Cancelled
+
+  @ReturnOrder
   Scenario: Verify User can Return the order
     And User click on Return Items button
     And User select the Return 'Item damaged'
     And User select the drop off service 'FedEx'
     And User click on Return Order button
     Then a cancelation message should be displayed Return was successful
-@orderReview #passed with no issue
+
+  @WrittingReview
   Scenario: Verify User can write a review on order placed
-    And User click on Orders section
-    #And User click on first order in list
-    When User click on Review button
-    And User write Review headline 'Awsome'
-    And User write Review Body 'I would recommed this to my family'
+    And User click on Review button
+    And User write Review headline 'Awesome' and 'Package deliverd on time'
     And User click Add your Review button
-    Then A review message should be displayed 'Your review was added successfully'
+    Then a review message should be displayed Your review was added successfully
