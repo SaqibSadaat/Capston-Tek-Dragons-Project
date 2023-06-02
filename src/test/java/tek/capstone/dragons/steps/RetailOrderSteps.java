@@ -96,8 +96,15 @@ public class RetailOrderSteps extends CommonUtility {
 	public void userClickOnPlaceYourOrder() {
 		click(factory.orderPage().placeOrderBttn);
 		logger.info("place your order button was clicked successfully");
-		
 	}
+	
+	@Then("a message should be displayed Order Placed, Thanks")
+	public void aMessageShouldBeDisplayedOrderPlacedThanks() {
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.orderPage().orderPlacedThanks));
+		logger.info("Payment Method added successfully");
+	}
+	
 	//@cancelOrder 
 	
 	@When("User click on Orders section")

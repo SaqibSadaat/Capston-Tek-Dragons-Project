@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @updateProfileAndPhone #PASSED WIH NO ISSUE
   Scenario: Verify User can update Profile Information
     #When User click on Account option
-    And User update Name 'Ali Khan' and Phone '203-101-8001'
+    And User update Name 'Ali Khannn' and Phone '203-101-8003'
     And User click on Update button
     Then user profile information should be updated
     
@@ -27,7 +27,7 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 7362853654616666 | Ranzoor     |              12 |           2025 |          657 |
+      | 7362853654615555 | Ranzoor     |              12 |           2025 |          657 |
     And User click on Add your Card button
     Then a message should be displayed Payment Method added successfully
     
@@ -39,7 +39,7 @@ Feature: Retail Account Page
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
       | 7362859624951547 | Ali    |              12 |           2026 |          158 |
     And user click on Update Your Card button
-    Then a message should be displayed Payment Method updated Successfull
+    Then a message should be displayed Payment Method updated Successfully
     
  @removeCard
   Scenario: Verify User can remove Debit or Credit card
@@ -53,9 +53,9 @@ Feature: Retail Account Page
     And User click on Add address option
     And user fill new address form with below information
       | country     | fullName | phoneNumber | streetAddress | apt   | city  | state   | zipCode |
-      |United States|Dragonhh   |424-437-9654 |25625       |522    |Lomita |California|90717    |
+      |United States|Dragkkk   |424-437-1548 |25625       |522    |Lomita |California|90717    |
     And User click Add Your Address button
-    Then a message should be displayed 'Address Added Successfully'
+    And a message should be displayed Address Updated Successfully
 
 @addressUpdated #passed with no issue
   Scenario: Verify User can edit an Address added on account

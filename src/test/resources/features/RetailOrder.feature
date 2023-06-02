@@ -6,6 +6,7 @@ Feature: Retail Order Page
     And User enter email 'alijankhan@gmail.com' and password 'Aliza123*23'
     And User click on login button
     And user should be logged in into Account
+    And User click on Orders section
 
   @addToCartOption #completed no issue
   Scenario: Verify User can add an item to cart
@@ -29,7 +30,7 @@ Feature: Retail Order Page
     And User click on Cart option
     And User click on Proceed to Checkout button
     And User click on Place Your Order
-    Then a message should be displayed 'Order Placed, Thanks'
+    Then a message should be displayed Order Placed, Thanks
 @cancelOrder #passed with no issue
   Scenario: Verify User can cancel the order
     #Given User is on retail website
@@ -37,7 +38,7 @@ Feature: Retail Order Page
     #And User enter email 'EmailValue' and password 'PasswordValue'
     #And User click on login button
     #And User should be logged in into Account
-    And User click on Orders section
+    #And User click on Orders section
     #And User click on first order in list
     And User click on Cancel The Order button
     And User select the cancelation Reason 'Bought wrong item'
