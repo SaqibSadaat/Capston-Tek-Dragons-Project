@@ -2531,3 +2531,14 @@
 2023-06-01 21:34:28,184 - logger_file -INFO - User filled the field
 2023-06-01 21:34:33,301 - logger_file -INFO - Add Address button was clicked successfully
 2023-06-01 21:34:38,322 - logger_file -INFO - Address Added Successfully
+2023-06-01 21:50:11,034 - logger_file -INFO - user is on retail website
+2023-06-01 21:50:11,111 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:50:11,283 - logger_file -INFO - user entered email and password
+2023-06-01 21:50:11,343 - logger_file -INFO - user clicked on login button
+2023-06-01 21:50:11,348 - logger_file -INFO - user logged in into account
+2023-06-01 21:50:11,798 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:50:12,329 - logger_file -INFO - User clicked on Return Items Button
+2023-06-01 21:50:12,380 - logger_file -INFO - User Select Reason Item Damaged
+2023-06-01 21:50:12,430 - logger_file -INFO - User select the drop off as Fedex
+2023-06-01 21:50:12,486 - logger_file -INFO - User click on Return Order button
+2023-06-01 21:50:12,890 - logger_file -INFO - A cancelation message popped up on the top of the page
