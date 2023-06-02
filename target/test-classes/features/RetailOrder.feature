@@ -7,6 +7,7 @@ Feature: Retail Order Page
     And User click on login button
     And user should be logged in into Account
     And User click on Orders section
+    And User click on first order in list
 
   #@addToCartOption #completed no issue
   #Scenario: Verify User can add an item to cart
