@@ -2512,3 +2512,22 @@
 2023-06-01 21:26:25,351 [main] INFO logger_file - proceed to checkout was clicked successfuly
 2023-06-01 21:26:25,408 [main] INFO logger_file - place your order button was clicked successfully
 2023-06-01 21:26:30,446 [main] INFO logger_file - Payment Method added successfully
+2023-06-01 21:33:50,974 [main] INFO logger_file - user is on retail website
+2023-06-01 21:33:51,060 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 21:33:51,241 [main] INFO logger_file - user entered email and password
+2023-06-01 21:33:51,304 [main] INFO logger_file - user clicked on login button
+2023-06-01 21:33:51,308 [main] INFO logger_file - user logged in into account
+2023-06-01 21:33:51,744 [main] INFO logger_file - user clicked on Account option
+2023-06-01 21:33:51,834 [main] INFO logger_file - Add Address Link Clicked successfully
+2023-06-01 21:33:52,423 [main] INFO logger_file - User filled the field
+2023-06-01 21:33:57,524 [main] INFO logger_file - Add Address button was clicked successfully
+2023-06-01 21:34:26,778 [main] INFO logger_file - user is on retail website
+2023-06-01 21:34:26,862 [main] INFO logger_file - user cliked on Sign In option
+2023-06-01 21:34:27,032 [main] INFO logger_file - user entered email and password
+2023-06-01 21:34:27,090 [main] INFO logger_file - user clicked on login button
+2023-06-01 21:34:27,095 [main] INFO logger_file - user logged in into account
+2023-06-01 21:34:27,524 [main] INFO logger_file - user clicked on Account option
+2023-06-01 21:34:27,611 [main] INFO logger_file - Add Address Link Clicked successfully
+2023-06-01 21:34:28,184 [main] INFO logger_file - User filled the field
+2023-06-01 21:34:33,301 [main] INFO logger_file - Add Address button was clicked successfully
+2023-06-01 21:34:38,322 [main] INFO logger_file - Address Added Successfully

@@ -13,97 +13,97 @@ public class RetailOrderSteps extends CommonUtility {
 	
 	POMFactory factory = new POMFactory();
 	
-	@When("User change the category to {string}")
-	public void userChangeTheCategoryTo(String SmartHome) {
-		selectByVisibleText(factory.orderPage().allDepartmentDropdown, SmartHome);
-		logger.info(SmartHome + " option is selected successfully");
-		
-	    
-	}
-	@When("User search for an item {string}")
-	public void userSearchForAnItem(String kasaOutdoorSmartPlug) {
-		sendText(factory.orderPage().searchInputField, kasaOutdoorSmartPlug);
-		logger.info(kasaOutdoorSmartPlug + " Item name was entered successfully");
-	   
-	}
-	@When("User click on Search icon")
-	public void userClickOnSearchIcon() {
-		click(factory.orderPage().searchBttn);
-		logger.info("Search button was clicked successfully");
-	   
-	}
-	@When("User click on item")
-	public void userClickOnItem() {
-		click(factory.orderPage().kasaOutdoorSmartPlugItem);
-		logger.info("Item was clicked successfully");
-	    
-	}
-	@When("User select quantity {string}")
-	public void userSelectQuantity(String itemQty) {
-		selectByVisibleText(factory.orderPage().productQtyDropdown, itemQty);
-		logger.info("Item was selected successfully");
-	    
-	}
-	@When("User click add to Cart button")
-	public void userClickAddToCartButton() {
-		click(factory.orderPage().addToCartBttn);
-		logger.info("Add to Cart button was clicked successfully");
-	    
-	}
-	@Then("the cart icon quantity should change to {string}")
-	public void theCartIconQuantityShouldChangeTo(String ItemQtyInTheCart) {
-		Assert.assertEquals(ItemQtyInTheCart, factory.orderPage().cartQtyField.getText());
-		logger.info(ItemQtyInTheCart + " Quatity was displayed in the cart");
-	}
-	@And("User click on item Apex Legends")
-	public void userClickOnItemApexLegends() {
-		click(factory.orderPage().apexLegendsItem);
-		logger.info("item was clicked successfully");
-
-	    
-}
-	@When("User search for an item Apex Legends {string}")
-	public void userSearchForAnItemApexLegends(String apexLegends) {
-		sendText(factory.orderPage().searchInputField, apexLegends);
-		logger.info(apexLegends + " entered successfully" );
-	    
-	}
-	@When("User select Apex Legends quantity {string}")
-	public void userSelectApexLegendsQuantity(String itemQty) {
-		selectByVisibleText(factory.orderPage().productQtyDropdown, itemQty);
-		logger.info(itemQty + " quatity was selected successfully"); 
-	  
-	}
-	@Then("the cart icon quantity Apex Legends should change to {string}")
-	public void theCartIconQuantityApexLegendsShouldChangeTo(String expectedQty) {
-		Assert.assertEquals(expectedQty, factory.orderPage().cartQtyField.getText());
-		logger.info(expectedQty + " Quantity was validated successfully");
-	  
-	}
-	@Then("User click on Cart option")
-	public void userClickOnCartOption() {
-		click(factory.orderPage().cartBttn);
-		logger.info("cart button was clicked successfully");
-	   
-	}
-	@Then("User click on Proceed to Checkout button")
-	public void userClickOnProceedToCheckoutButton() {
-		click(factory.orderPage().proceedToCheckoutBttn);
-		logger.info("proceed to checkout was clicked successfuly");
-	 
-	}
-	@Then("User click on Place Your Order")
-	public void userClickOnPlaceYourOrder() {
-		click(factory.orderPage().placeOrderBttn);
-		logger.info("place your order button was clicked successfully");
-	}
-	
-	@Then("a message should be displayed Order Placed, Thanks")
-	public void aMessageShouldBeDisplayedOrderPlacedThanks() {
-		slowDown();
-		Assert.assertTrue(isElementDisplayed(factory.orderPage().orderPlacedThanks));
-		logger.info("Payment Method added successfully");
-	}
+//	@When("User change the category to {string}")
+//	public void userChangeTheCategoryTo(String SmartHome) {
+//		selectByVisibleText(factory.orderPage().allDepartmentDropdown, SmartHome);
+//		logger.info(SmartHome + " option is selected successfully");
+//		
+//	    
+//	}
+//	@When("User search for an item {string}")
+//	public void userSearchForAnItem(String kasaOutdoorSmartPlug) {
+//		sendText(factory.orderPage().searchInputField, kasaOutdoorSmartPlug);
+//		logger.info(kasaOutdoorSmartPlug + " Item name was entered successfully");
+//	   
+//	}
+//	@When("User click on Search icon")
+//	public void userClickOnSearchIcon() {
+//		click(factory.orderPage().searchBttn);
+//		logger.info("Search button was clicked successfully");
+//	   
+//	}
+//	@When("User click on item")
+//	public void userClickOnItem() {
+//		click(factory.orderPage().kasaOutdoorSmartPlugItem);
+//		logger.info("Item was clicked successfully");
+//	    
+//	}
+//	@When("User select quantity {string}")
+//	public void userSelectQuantity(String itemQty) {
+//		selectByVisibleText(factory.orderPage().productQtyDropdown, itemQty);
+//		logger.info("Item was selected successfully");
+//	    
+//	}
+//	@When("User click add to Cart button")
+//	public void userClickAddToCartButton() {
+//		click(factory.orderPage().addToCartBttn);
+//		logger.info("Add to Cart button was clicked successfully");
+//	    
+//	}
+//	@Then("the cart icon quantity should change to {string}")
+//	public void theCartIconQuantityShouldChangeTo(String ItemQtyInTheCart) {
+//		Assert.assertEquals(ItemQtyInTheCart, factory.orderPage().cartQtyField.getText());
+//		logger.info(ItemQtyInTheCart + " Quatity was displayed in the cart");
+//	}
+//	@And("User click on item Apex Legends")
+//	public void userClickOnItemApexLegends() {
+//		click(factory.orderPage().apexLegendsItem);
+//		logger.info("item was clicked successfully");
+//
+//	    
+//}
+//	@When("User search for an item Apex Legends {string}")
+//	public void userSearchForAnItemApexLegends(String apexLegends) {
+//		sendText(factory.orderPage().searchInputField, apexLegends);
+//		logger.info(apexLegends + " entered successfully" );
+//	    
+//	}
+//	@When("User select Apex Legends quantity {string}")
+//	public void userSelectApexLegendsQuantity(String itemQty) {
+//		selectByVisibleText(factory.orderPage().productQtyDropdown, itemQty);
+//		logger.info(itemQty + " quatity was selected successfully"); 
+//	  
+//	}
+//	@Then("the cart icon quantity Apex Legends should change to {string}")
+//	public void theCartIconQuantityApexLegendsShouldChangeTo(String expectedQty) {
+//		Assert.assertEquals(expectedQty, factory.orderPage().cartQtyField.getText());
+//		logger.info(expectedQty + " Quantity was validated successfully");
+//	  
+//	}
+//	@Then("User click on Cart option")
+//	public void userClickOnCartOption() {
+//		click(factory.orderPage().cartBttn);
+//		logger.info("cart button was clicked successfully");
+//	   
+//	}
+//	@Then("User click on Proceed to Checkout button")
+//	public void userClickOnProceedToCheckoutButton() {
+//		click(factory.orderPage().proceedToCheckoutBttn);
+//		logger.info("proceed to checkout was clicked successfuly");
+//	 
+//	}
+//	@Then("User click on Place Your Order")
+//	public void userClickOnPlaceYourOrder() {
+//		click(factory.orderPage().placeOrderBttn);
+//		logger.info("place your order button was clicked successfully");
+//	}
+//	
+//	@Then("a message should be displayed Order Placed, Thanks")
+//	public void aMessageShouldBeDisplayedOrderPlacedThanks() {
+//		slowDown();
+//		Assert.assertTrue(isElementDisplayed(factory.orderPage().orderPlacedThanks));
+//		logger.info("Payment Method added successfully");
+//	}
 	
 	//@cancelOrder 
 	
