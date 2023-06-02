@@ -20,7 +20,7 @@ public class RetailOrderPage extends CommonUtility {
 	public WebElement searchInputField;
 	@FindBy(id ="searchBtn")
 	public WebElement searchBttn;
-	@FindBy(xpath ="/html/body/div/div[1]/div[1]/div[3]/div/div/p[1]")
+	@FindBy(xpath ="/html/body/div/div[1]/div[1]/div[3]/div/div/img")
 	public WebElement kasaOutdoorSmartPlugItem;
 	@FindBy(xpath ="/html/body/div/div[1]/div[1]/div[3]/div/div[1]/div[3]/div/div/select")
 	public WebElement productQtyDropdown;

@@ -2370,3 +2370,145 @@
 2023-06-01 20:31:19,403 - logger_file -INFO - User select the drop off as Fedex
 2023-06-01 20:31:19,469 - logger_file -INFO - User click on Return Order button
 2023-06-01 20:31:19,996 - logger_file -INFO - A cancelation message popped up on the top of the page
+2023-06-01 20:42:32,775 - logger_file -INFO - user is on retail website
+2023-06-01 20:42:32,866 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 20:42:33,034 - logger_file -INFO - user entered email and password
+2023-06-01 20:42:33,090 - logger_file -INFO - user clicked on login button
+2023-06-01 20:42:33,096 - logger_file -INFO - user logged in into account
+2023-06-01 20:42:33,594 - logger_file -INFO - user clicked on Account option
+2023-06-01 20:42:33,672 - logger_file -INFO - user clicked on Add Payment
+2023-06-01 20:42:34,130 - logger_file -INFO - user clicked on add card btn
+2023-06-01 20:43:53,222 - logger_file -INFO - user is on retail website
+2023-06-01 20:43:53,305 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 20:43:53,476 - logger_file -INFO - user entered email and password
+2023-06-01 20:43:53,534 - logger_file -INFO - user clicked on login button
+2023-06-01 20:43:53,539 - logger_file -INFO - user logged in into account
+2023-06-01 20:43:54,082 - logger_file -INFO - user clicked on Account option
+2023-06-01 20:43:54,482 - logger_file -INFO - Edit button was clicked successfully
+2023-06-01 20:43:55,318 - logger_file -INFO - User filled the field
+2023-06-01 20:44:00,421 - logger_file -INFO - User clicked on Update Your Address
+2023-06-01 20:57:12,188 - logger_file -INFO - user is on retail website
+2023-06-01 20:57:12,280 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 20:57:12,448 - logger_file -INFO - user entered email and password
+2023-06-01 20:57:12,507 - logger_file -INFO - user clicked on login button
+2023-06-01 20:57:12,512 - logger_file -INFO - user logged in into account
+2023-06-01 20:57:12,934 - logger_file -INFO - user clicked on Account option
+2023-06-01 20:57:13,022 - logger_file -INFO - Add Address Link Clicked successfully
+2023-06-01 20:57:13,624 - logger_file -INFO - User filled the field
+2023-06-01 20:57:18,720 - logger_file -INFO - Add Address button was clicked successfully
+2023-06-01 20:57:23,751 - logger_file -INFO - Address Added Successfully
+2023-06-01 20:57:43,635 - logger_file -INFO - user is on retail website
+2023-06-01 20:57:43,717 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 20:57:43,886 - logger_file -INFO - user entered email and password
+2023-06-01 20:57:43,942 - logger_file -INFO - user clicked on login button
+2023-06-01 20:57:43,947 - logger_file -INFO - user logged in into account
+2023-06-01 20:57:44,353 - logger_file -INFO - user clicked on Account option
+2023-06-01 20:57:44,798 - logger_file -INFO - Edit button was clicked successfully
+2023-06-01 20:57:45,618 - logger_file -INFO - User filled the field
+2023-06-01 20:57:50,742 - logger_file -INFO - User clicked on Update Your Address
+2023-06-01 20:57:55,770 - logger_file -INFO - Your New Address Updated
+2023-06-01 20:59:00,018 - logger_file -INFO - user is on retail website
+2023-06-01 20:59:00,104 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 20:59:00,272 - logger_file -INFO - user entered email and password
+2023-06-01 20:59:00,331 - logger_file -INFO - user clicked on login button
+2023-06-01 20:59:00,336 - logger_file -INFO - user logged in into account
+2023-06-01 20:59:00,729 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 20:59:00,822 - logger_file -INFO - Smart Home option is selected successfully
+2023-06-01 20:59:00,939 - logger_file -INFO - kasa outdoor smart plug Item name was entered successfully
+2023-06-01 20:59:00,999 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 20:59:01,059 - logger_file -INFO - Item was clicked successfully
+2023-06-01 20:59:20,793 - logger_file -INFO - Item was selected successfully
+2023-06-01 20:59:20,856 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 20:59:21,256 - logger_file -INFO - 2 Quatity was displayed in the cart
+2023-06-01 21:22:52,858 - logger_file -INFO - user is on retail website
+2023-06-01 21:22:52,942 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:22:53,115 - logger_file -INFO - user entered email and password
+2023-06-01 21:22:53,174 - logger_file -INFO - user clicked on login button
+2023-06-01 21:22:53,180 - logger_file -INFO - user logged in into account
+2023-06-01 21:22:53,574 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:22:53,660 - logger_file -INFO - Smart Home option is selected successfully
+2023-06-01 21:22:53,757 - logger_file -INFO - kasa outdoor smart plug Item name was entered successfully
+2023-06-01 21:22:53,813 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 21:22:54,160 - logger_file -INFO - Item was clicked successfully
+2023-06-01 21:22:54,492 - logger_file -INFO - Item was selected successfully
+2023-06-01 21:22:54,552 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 21:22:54,762 - logger_file -INFO - 2 Quatity was displayed in the cart
+2023-06-01 21:24:06,047 - logger_file -INFO - user is on retail website
+2023-06-01 21:24:06,133 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:24:06,306 - logger_file -INFO - user entered email and password
+2023-06-01 21:24:06,367 - logger_file -INFO - user clicked on login button
+2023-06-01 21:24:06,372 - logger_file -INFO - user logged in into account
+2023-06-01 21:24:07,076 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:24:07,163 - logger_file -INFO - Electronics option is selected successfully
+2023-06-01 21:24:07,242 - logger_file -INFO - Apex Legends entered successfully
+2023-06-01 21:24:07,297 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 21:24:07,628 - logger_file -INFO - Item was clicked successfully
+2023-06-01 21:24:08,086 - logger_file -INFO - 5 quatity was selected successfully
+2023-06-01 21:24:08,142 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 21:24:08,536 - logger_file -INFO - 5 Quantity was validated successfully
+2023-06-01 21:24:08,603 - logger_file -INFO - cart button was clicked successfully
+2023-06-01 21:24:08,672 - logger_file -INFO - proceed to checkout was clicked successfuly
+2023-06-01 21:24:08,731 - logger_file -INFO - place your order button was clicked successfully
+2023-06-01 21:24:13,765 - logger_file -INFO - Payment Method added successfully
+2023-06-01 21:24:46,889 - logger_file -INFO - user is on retail website
+2023-06-01 21:24:46,977 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:24:47,151 - logger_file -INFO - user entered email and password
+2023-06-01 21:24:47,210 - logger_file -INFO - user clicked on login button
+2023-06-01 21:24:47,215 - logger_file -INFO - user logged in into account
+2023-06-01 21:24:47,609 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:24:47,692 - logger_file -INFO - Electronics option is selected successfully
+2023-06-01 21:24:47,770 - logger_file -INFO - Apex Legends entered successfully
+2023-06-01 21:24:47,827 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 21:24:48,900 - logger_file -INFO - Item was clicked successfully
+2023-06-01 21:24:49,178 - logger_file -INFO - 5 quatity was selected successfully
+2023-06-01 21:24:49,231 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 21:24:49,439 - logger_file -INFO - 5 Quantity was validated successfully
+2023-06-01 21:24:49,507 - logger_file -INFO - cart button was clicked successfully
+2023-06-01 21:24:49,576 - logger_file -INFO - proceed to checkout was clicked successfuly
+2023-06-01 21:24:49,634 - logger_file -INFO - place your order button was clicked successfully
+2023-06-01 21:24:54,658 - logger_file -INFO - Payment Method added successfully
+2023-06-01 21:25:45,251 - logger_file -INFO - user is on retail website
+2023-06-01 21:25:45,349 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:25:45,517 - logger_file -INFO - user entered email and password
+2023-06-01 21:25:45,574 - logger_file -INFO - user clicked on login button
+2023-06-01 21:25:45,580 - logger_file -INFO - user logged in into account
+2023-06-01 21:25:45,959 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:25:46,637 - logger_file -INFO - User clicked on Return Items Button
+2023-06-01 21:25:46,692 - logger_file -INFO - User Select Reason Item Damaged
+2023-06-01 21:25:46,742 - logger_file -INFO - User select the drop off as Fedex
+2023-06-01 21:25:46,801 - logger_file -INFO - User click on Return Order button
+2023-06-01 21:25:47,065 - logger_file -INFO - A cancelation message popped up on the top of the page
+2023-06-01 21:26:09,226 - logger_file -INFO - user is on retail website
+2023-06-01 21:26:09,315 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:26:09,507 - logger_file -INFO - user entered email and password
+2023-06-01 21:26:09,572 - logger_file -INFO - user clicked on login button
+2023-06-01 21:26:09,577 - logger_file -INFO - user logged in into account
+2023-06-01 21:26:09,992 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:26:10,082 - logger_file -INFO - Electronics option is selected successfully
+2023-06-01 21:26:10,167 - logger_file -INFO - Apex Legends entered successfully
+2023-06-01 21:26:10,228 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 21:26:11,069 - logger_file -INFO - Item was clicked successfully
+2023-06-01 21:26:11,389 - logger_file -INFO - 5 quatity was selected successfully
+2023-06-01 21:26:11,443 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 21:26:11,709 - logger_file -INFO - 5 Quantity was validated successfully
+2023-06-01 21:26:11,776 - logger_file -INFO - cart button was clicked successfully
+2023-06-01 21:26:11,845 - logger_file -INFO - proceed to checkout was clicked successfuly
+2023-06-01 21:26:11,904 - logger_file -INFO - place your order button was clicked successfully
+2023-06-01 21:26:16,946 - logger_file -INFO - Payment Method added successfully
+2023-06-01 21:26:23,390 - logger_file -INFO - user is on retail website
+2023-06-01 21:26:23,472 - logger_file -INFO - user cliked on Sign In option
+2023-06-01 21:26:23,642 - logger_file -INFO - user entered email and password
+2023-06-01 21:26:23,701 - logger_file -INFO - user clicked on login button
+2023-06-01 21:26:23,706 - logger_file -INFO - user logged in into account
+2023-06-01 21:26:24,094 - logger_file -INFO - Order link was clicked successfuly
+2023-06-01 21:26:24,178 - logger_file -INFO - Electronics option is selected successfully
+2023-06-01 21:26:24,255 - logger_file -INFO - Apex Legends entered successfully
+2023-06-01 21:26:24,309 - logger_file -INFO - Search button was clicked successfully
+2023-06-01 21:26:24,680 - logger_file -INFO - Item was clicked successfully
+2023-06-01 21:26:24,938 - logger_file -INFO - 5 quatity was selected successfully
+2023-06-01 21:26:24,998 - logger_file -INFO - Add to Cart button was clicked successfully
+2023-06-01 21:26:25,219 - logger_file -INFO - 5 Quantity was validated successfully
+2023-06-01 21:26:25,283 - logger_file -INFO - cart button was clicked successfully
+2023-06-01 21:26:25,351 - logger_file -INFO - proceed to checkout was clicked successfuly
+2023-06-01 21:26:25,408 - logger_file -INFO - place your order button was clicked successfully
+2023-06-01 21:26:30,446 - logger_file -INFO - Payment Method added successfully

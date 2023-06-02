@@ -166,10 +166,10 @@ public class RetailAccountSteps extends CommonUtility {
 			click(factory.accountPage().addressAddAddressBttn);
 			logger.info("Add Address button was clicked successfully");
 		}
-	   @And("a message should be displayed Address Updated Successfully")
+	   @And("a message should be displayed Address Added Successfully")
 			public void aMessageShouldBeDisplayedonScreen() {
 				slowDown();
-				Assert.assertTrue(isElementDisplayed(factory.accountPage().AddressAddedSuccessfully));
+				Assert.assertTrue(isElementDisplayed(factory.accountPage().addressAddedSuccessfullyMssg));
 				logger.info("Address Added Successfully");
 				
 			}
@@ -264,12 +264,12 @@ public class RetailAccountSteps extends CommonUtility {
 		}
 		
 
-//		@Then("a message should be displayed Address Updated Successfully")
-//		public void aMsgShouldBeDisplayedOnTheScreeen() {
-//		slowDown();
-//		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressUpdatedMessage));
-//		logger.info("Your New Address Updated");
- 
+		@Then("a message should be displayed Address Updated Successfully")
+		public void aMessageShouldBeDisplayedAddressUpdatedSuccessfully() {
+	    slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressUpdatedMessage));
+		logger.info("Your New Address Updated");
+		}
 		///////////////////////////////////////////////////
 		
 		@When("User click on remove option of Address section")

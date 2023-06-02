@@ -121,11 +121,11 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id ="addressBtn")
 	public WebElement addressAddAddressBttn;
 			
-//	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]")
-//	public WebElement addressAddedSuccessfullyMssg;
+	@FindBy(xpath = "/html/body/div/div[2]/div/div/div[1]/div[2]")
+	public WebElement addressAddedSuccessfullyMssg;
 	
-	@FindBy(xpath="//div[text()=\"Address Added Successfully\"]")
-	public WebElement AddressAddedSuccessfully;
+//	@FindBy(xpath="//div[text()=\"Address Added Successfully\"]")
+//	public WebElement AddressAddedSuccessfully;
 	
 	//Edit credit or debit card 
 	
