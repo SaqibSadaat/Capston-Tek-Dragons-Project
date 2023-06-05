@@ -26,7 +26,7 @@ public class SignInSteps extends CommonUtility {
 		String actualTitle = getTitle();
 		String expectedTitle = "React App";
 		Assert.assertEquals(actualTitle, expectedTitle);
-		Assert.assertTrue(isElementDisplayed(factory.homePage().retailLogo));
+		Assert.assertTrue(isElementDisplayed(factory.homePage().tekschoolLogo));
 		logger.info("user is on retail website");
 	}
 	@Given("User is on retial website")
@@ -36,11 +36,11 @@ public class SignInSteps extends CommonUtility {
 		Assert.assertEquals(expectdTitle, actualTitle);
 		logger.info("Retail Website opened and verified"); 
 		
-	}
+}
 	
 	@When("User click on sign in option")
 	public void userClickOnSignInOption() {
-		click(factory.homePage().signInOption);
+		click(factory.homePage().signin);
 		logger.info("user cliked on Sign In option");
 
 	}

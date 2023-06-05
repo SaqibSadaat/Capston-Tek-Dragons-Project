@@ -19,7 +19,7 @@ public class RetailAccountSteps extends CommonUtility {
 
 	@When("User click on Account option")
 	public void userClickOnAccountOption() {
-		click(factory.homePage().accountOption);
+		click(factory.homePage().account);
 		logger.info("user clicked on Account option");
 	 
 	}
