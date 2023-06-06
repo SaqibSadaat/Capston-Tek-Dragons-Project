@@ -2789,3 +2789,49 @@
 2023-06-05 15:45:08,224 [main] INFO logger_file - user clicked on Add Your card button
 2023-06-05 15:45:08,424 [main] INFO logger_file - user clicked on Place Your Order
 2023-06-05 15:45:08,820 [main] INFO logger_file - A message popped up on the top of the screen
+2023-06-05 20:20:26,455 [main] INFO logger_file - user is on retail website
+2023-06-05 20:20:26,624 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:20:26,921 [main] INFO logger_file - user entered email and password
+2023-06-05 20:20:27,040 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:20:27,048 [main] INFO logger_file - user logged in into account
+2023-06-05 20:20:27,729 [main] INFO logger_file - All Department changed toSmart Home
+2023-06-05 20:20:27,926 [main] INFO logger_file - user entred kasa outdoor smart plug
+2023-06-05 20:20:28,100 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:20:28,545 [main] INFO logger_file - user clicked on item
+2023-06-05 20:20:28,895 [main] INFO logger_file - user selected quantity '2' 
+2023-06-05 20:20:28,989 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:20:29,023 [main] INFO logger_file - cart icone changed to '2' 
+2023-06-05 20:20:29,224 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:20:29,369 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:20:29,505 [main] INFO logger_file - user clicked on Add New Address link
+2023-06-05 20:20:30,432 [main] INFO logger_file - User filled the field
+2023-06-05 20:20:30,563 [main] INFO logger_file - user clicked Add Your Address Button
+2023-06-05 20:20:30,609 [main] INFO logger_file - user clicked Add a credit card information
+2023-06-05 20:20:31,494 [main] INFO logger_file - user clicked on Add Your card button
+2023-06-05 20:20:31,714 [main] INFO logger_file - user clicked on Place Your Order
+2023-06-05 20:20:32,171 [main] INFO logger_file - A message popped up on the top of the screen
+2023-06-05 20:22:31,261 [main] INFO logger_file - user is on retail website
+2023-06-05 20:22:31,434 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:22:31,718 [main] INFO logger_file - user entered email and password
+2023-06-05 20:22:31,808 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:26:58,857 [main] INFO logger_file - user is on retail website
+2023-06-05 20:26:59,023 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:26:59,331 [main] INFO logger_file - user entered email and password
+2023-06-05 20:26:59,448 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:26:59,454 [main] INFO logger_file - user logged in into account
+2023-06-05 20:27:00,076 [main] INFO logger_file - All Department changed toElectronics
+2023-06-05 20:27:00,297 [main] INFO logger_file - user entred Apex Legends
+2023-06-05 20:27:00,466 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:27:00,894 [main] INFO logger_file - user clicked on item
+2023-06-05 20:27:01,226 [main] INFO logger_file - user selected quantity '5' 
+2023-06-05 20:27:01,331 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:27:01,365 [main] INFO logger_file - cart icone changed to '5' 
+2023-06-05 20:27:01,505 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:27:02,212 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:27:02,354 [main] INFO logger_file - user clicked on Place Your Order
+2023-06-05 20:27:03,003 [main] INFO logger_file - A message popped up on the top of the screen
+2023-06-05 20:28:00,063 [main] INFO logger_file - Retail Website opened and verified
+2023-06-05 20:28:00,249 [main] INFO logger_file - user cliked on Sign In option
+2023-06-05 20:28:00,265 [main] INFO logger_file - user logged in into account
+2023-06-05 20:28:00,576 [main] INFO logger_file - user entered email and password
+2023-06-05 20:28:00,675 [main] INFO logger_file - user clicked on login button

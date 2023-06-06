@@ -366,5 +366,13 @@ public class HomeSteps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().Thanks));
 		logger.info("A message popped up on the top of the screen");
 	}
+	
+	@When("User should be logged in into Account")
+	public void userShouldBeLoggedInIntoAccount1() {
+		String expectdTitle = "React App";
+		String actualTitle = getTitle();
+		Assert.assertEquals(expectdTitle, actualTitle);
+		logger.info("user logged in into account");
+	}
 
 }
