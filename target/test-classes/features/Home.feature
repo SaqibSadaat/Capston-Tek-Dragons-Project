@@ -62,7 +62,7 @@ Feature: Retail Home Page
     And User click Add a credit card or Debit Card for Payment method
     And User fill the Debit or credit card information
       | CardNumber       | NameOnCard | ExpirationMonth | ExpirationYear | SecurityCode |
-      | 1245987542369541 | Ali Ahmad    |              9 |           2027 |          123 |
+      | 1245987542368542 | Ali Ahmad    |              9 |           2027 |          123 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed Order Placed, Thanks

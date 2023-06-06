@@ -2835,3 +2835,81 @@
 2023-06-05 20:28:00,265 [main] INFO logger_file - user logged in into account
 2023-06-05 20:28:00,576 [main] INFO logger_file - user entered email and password
 2023-06-05 20:28:00,675 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:43:11,815 [main] INFO logger_file - user is on retail website
+2023-06-05 20:43:11,980 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:43:12,279 [main] INFO logger_file - user entered email and password
+2023-06-05 20:43:12,381 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:43:12,388 [main] INFO logger_file - user logged in into account
+2023-06-05 20:43:12,923 [main] INFO logger_file - All Department changed toSmart Home
+2023-06-05 20:43:13,079 [main] INFO logger_file - user entred kasa outdoor smart plug
+2023-06-05 20:43:13,156 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:43:13,472 [main] INFO logger_file - user clicked on item
+2023-06-05 20:43:13,768 [main] INFO logger_file - user selected quantity '2' 
+2023-06-05 20:43:13,909 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:43:13,943 [main] INFO logger_file - cart icone changed to '2' 
+2023-06-05 20:43:14,095 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:43:14,257 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:43:14,412 [main] INFO logger_file - user clicked on Add New Address link
+2023-06-05 20:43:15,334 [main] INFO logger_file - User filled the field
+2023-06-05 20:43:15,526 [main] INFO logger_file - user clicked Add Your Address Button
+2023-06-05 20:43:15,576 [main] INFO logger_file - user clicked Add a credit card information
+2023-06-05 20:43:16,619 [main] INFO logger_file - user clicked on Add Your card button
+2023-06-05 20:47:16,511 [main] INFO logger_file - user is on retail website
+2023-06-05 20:47:16,609 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:47:16,787 [main] INFO logger_file - user entered email and password
+2023-06-05 20:47:16,848 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:47:16,853 [main] INFO logger_file - user logged in into account
+2023-06-05 20:47:17,256 [main] INFO logger_file - All Department changed toSmart Home
+2023-06-05 20:47:17,352 [main] INFO logger_file - user entred kasa outdoor smart plug
+2023-06-05 20:47:17,410 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:47:17,782 [main] INFO logger_file - user clicked on item
+2023-06-05 20:47:18,042 [main] INFO logger_file - user selected quantity '2' 
+2023-06-05 20:47:18,102 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:47:18,119 [main] INFO logger_file - cart icone changed to '2' 
+2023-06-05 20:47:18,183 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:47:18,790 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:47:18,859 [main] INFO logger_file - user clicked on Add New Address link
+2023-06-05 20:47:19,398 [main] INFO logger_file - User filled the field
+2023-06-05 20:47:19,471 [main] INFO logger_file - user clicked Add Your Address Button
+2023-06-05 20:47:19,494 [main] INFO logger_file - user clicked Add a credit card information
+2023-06-05 20:47:19,936 [main] INFO logger_file - user clicked on Add Your card button
+2023-06-05 20:48:09,865 [main] INFO logger_file - user is on retail website
+2023-06-05 20:48:09,963 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:48:10,138 [main] INFO logger_file - user entered email and password
+2023-06-05 20:48:10,198 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:48:10,203 [main] INFO logger_file - user logged in into account
+2023-06-05 20:48:10,626 [main] INFO logger_file - All Department changed toSmart Home
+2023-06-05 20:48:10,729 [main] INFO logger_file - user entred kasa outdoor smart plug
+2023-06-05 20:48:10,786 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:48:11,095 [main] INFO logger_file - user clicked on item
+2023-06-05 20:48:11,351 [main] INFO logger_file - user selected quantity '2' 
+2023-06-05 20:48:11,411 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:48:11,429 [main] INFO logger_file - cart icone changed to '2' 
+2023-06-05 20:48:11,491 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:48:11,567 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:48:11,639 [main] INFO logger_file - user clicked on Add New Address link
+2023-06-05 20:48:12,184 [main] INFO logger_file - User filled the field
+2023-06-05 20:48:12,256 [main] INFO logger_file - user clicked Add Your Address Button
+2023-06-05 20:48:12,282 [main] INFO logger_file - user clicked Add a credit card information
+2023-06-05 20:48:12,691 [main] INFO logger_file - user clicked on Add Your card button
+2023-06-05 20:52:50,630 [main] INFO logger_file - user is on retail website
+2023-06-05 20:52:50,742 [main] INFO logger_file - user clicked on sign in option succefully
+2023-06-05 20:52:50,919 [main] INFO logger_file - user entered email and password
+2023-06-05 20:52:50,979 [main] INFO logger_file - user clicked on login button
+2023-06-05 20:52:50,985 [main] INFO logger_file - user logged in into account
+2023-06-05 20:52:51,384 [main] INFO logger_file - All Department changed toSmart Home
+2023-06-05 20:52:51,477 [main] INFO logger_file - user entred kasa outdoor smart plug
+2023-06-05 20:52:51,535 [main] INFO logger_file - user clicked on search button
+2023-06-05 20:52:51,898 [main] INFO logger_file - user clicked on item
+2023-06-05 20:52:52,325 [main] INFO logger_file - user selected quantity '2' 
+2023-06-05 20:52:52,386 [main] INFO logger_file - user clicked on Add To Cart
+2023-06-05 20:52:52,402 [main] INFO logger_file - cart icone changed to '2' 
+2023-06-05 20:52:52,466 [main] INFO logger_file - user clicked on Cart Option
+2023-06-05 20:52:52,543 [main] INFO logger_file - user clicked on Proceed to Checkout
+2023-06-05 20:52:52,614 [main] INFO logger_file - user clicked on Add New Address link
+2023-06-05 20:52:53,158 [main] INFO logger_file - User filled the field
+2023-06-05 20:52:53,230 [main] INFO logger_file - user clicked Add Your Address Button
+2023-06-05 20:52:53,253 [main] INFO logger_file - user clicked Add a credit card information
+2023-06-05 20:52:53,666 [main] INFO logger_file - user clicked on Add Your card button
+2023-06-05 20:52:53,919 [main] INFO logger_file - user clicked on Place Your Order
+2023-06-05 20:52:54,318 [main] INFO logger_file - A message popped up on the top of the screen
