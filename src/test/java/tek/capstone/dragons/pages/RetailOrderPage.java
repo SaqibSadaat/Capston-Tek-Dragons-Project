@@ -42,7 +42,6 @@ public class RetailOrderPage extends CommonUtility {
 	public WebElement orderPlacedThanks;
 	
 	//Background:
-	 
     @FindBy(id="signinLink")
 	public WebElement signIn;
 	@FindBy(id="email")
@@ -59,8 +58,7 @@ public class RetailOrderPage extends CommonUtility {
 	public WebElement orderLink;
 	
 	// @CancelOrder
-	//  Scenario: Verify User can cancel the order
-			
+	//  Scenario: Verify User can cancel the order	
 	@FindBy(id="cancelBtn")
     public WebElement cancelbttn;		
 	@FindBy(id="reasonInput")
@@ -72,8 +70,7 @@ public class RetailOrderPage extends CommonUtility {
 				
 			
 	// @ReturnOrder
-    //  Scenario: Verify User can Return the order
-			
+    //  Scenario: Verify User can Return the order	
 	@FindBy(id="returnBtn")
 	public WebElement returnbtn;		    
 	@FindBy(id ="reasonInput")
@@ -82,13 +79,12 @@ public class RetailOrderPage extends CommonUtility {
 	public WebElement dropOfInput;		    
 	@FindBy(id = "orderSubmitBtn")
 	public WebElement returnButton;		    
-    @FindBy(xpath="//p[text()='Return was successfull']")
-    public WebElement yourOrderReturn;
+//    @FindBy(xpath="//p[text()='Return was successfull']")
+//    public WebElement yourOrderReturn;
 
 
     //@WrittingReview
-	// Scenario: Verify User can write a review on order placed
-		    
+	// Scenario: Verify User can write a review on order placed    
 	@FindBy(id = "reviewBtn")
 	public WebElement reviewBtn;	    
 	@FindBy(id = "headlineInput")

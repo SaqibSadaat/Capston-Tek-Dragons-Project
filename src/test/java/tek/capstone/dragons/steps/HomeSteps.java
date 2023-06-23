@@ -16,15 +16,6 @@ import tek.capstone.dragons.utilities.CommonUtility;
 public class HomeSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-//	@Given("User is on retail website")
-//	public void userIsOnRetailWebsite() {
-//		String expectedTitle = "React App";
-//		String actualTitle = getTitle();// wrote this one in CommonUtility
-//		Assert.assertEquals(expectedTitle, actualTitle);
-//		logger.info(actualTitle + " is equal to " + expectedTitle);
-//
-//	}
-
 	// @AllSection
 	// Scenario: Verify Shop by Department sidebar
 
@@ -32,7 +23,6 @@ public class HomeSteps extends CommonUtility {
 	public void userClickedOnAllSection() {
 		click(factory.homePage().All);
 		logger.info("User clicked on All Section successfully");
-
 	}
 
 	@Then("below options are present in Shop by Department sidebar")
@@ -45,7 +35,6 @@ public class HomeSteps extends CommonUtility {
 
 	// @Department
 	// Scenario Outline: Verify department sidebar options
-
 	String department;
 
 	@When("User is on {string}")
@@ -135,12 +124,10 @@ public class HomeSteps extends CommonUtility {
 
 	// @additem
 	// Scenario: Verify User can add an item to cart
-
 	@When("User click on Sign in  Option")
 	public void userClickOnSignInOptionn() {
 		click(factory.homePage().signin);
 		logger.info("user clicked on sign in option succefully");
-
 	}
 
 	@And("user enter email {string} and password {string}")
@@ -148,21 +135,18 @@ public class HomeSteps extends CommonUtility {
 		sendText(factory.signInPage().emailField, email);
 		sendText(factory.signInPage().passwordField, password);
 		logger.info("user entered email" + email + "and password" + password);
-
 	}
 
 	@And("User click on Login button")
 	public void userClickOnLoginButton() {
 		click(factory.signInPage().loginButton);
 		logger.info("user clicked on login button");
-
 	}
 
 	@And("User should be logged in into account")
 	public void userShouldBeLoggedInIntoAccount() {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().account));
 		logger.info("User could login successfully");
-
 	}
 
 	@And("User change the category to {string}")
@@ -209,8 +193,6 @@ public class HomeSteps extends CommonUtility {
 
 	// @placeAnOrder
 	// Scenario: Verify User can place an order without Shipping address and payment
-	// Method on file
-
 	@And("User click on Cart option")
 	public void userClickOnCartOption() {
 		click(factory.homePage().cartBtn);
@@ -242,14 +224,12 @@ public class HomeSteps extends CommonUtility {
 		selectByVisibleText(factory.homePage().State, fillNewAddress.get(0).get("State"));
 		sendText(factory.homePage().ZipCode, fillNewAddress.get(0).get("ZipCode"));
 		logger.info("User filled the field");
-
 	}
 
 	@And("User click Add Your Address  button")
 	public void user_Click_AddYourAddressOption() {
 		click(factory.homePage().addressBtn);
 		logger.info("user clicked Add Your Address Button");
-
 	}
 
 	@And("User click Add a credit card or Debit Card for Payment method")
@@ -266,7 +246,6 @@ public class HomeSteps extends CommonUtility {
 		selectByVisibleText(factory.homePage().MonthInput, debitNewcredit.get(0).get("ExpirationMonth"));
 		selectByVisibleText(factory.homePage().YearInput, debitNewcredit.get(0).get("ExpirationYear"));
 		sendText(factory.homePage().SecurityInput, debitNewcredit.get(0).get("SecurityCode"));
-
 	}
 
 	@And("User click on Add your card button")
@@ -286,24 +265,20 @@ public class HomeSteps extends CommonUtility {
 	public void aMsgShouldBeDisplayed() {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().Thanks));
 		logger.info("A message popped up on the top of the screen");
-
 	}
 
 	// @OrderAdded
 	// Scenario: Verify User can place an order with Shipping address and payment
-	// Method on file
-
 	@When("User click on Sign in option")
 	public void user_Click_On_SignIn_Option() {
 		click(factory.homePage().signin);
 		logger.info("user clicked on sign in option succefully");
-
 	}
+	
 	@And("user change the category to {string}")
 	public void userChange_The_Category(String Electronics) {
 		selectByVisibleText(factory.homePage().allDepartments, Electronics);
 		logger.info("All Department changed to" + Electronics);
-
 	}
 
 	@And("User search for the item {string}")
@@ -340,7 +315,6 @@ public class HomeSteps extends CommonUtility {
 	public void quantity_changedTo(String five) {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().cartBtn, five));
 		logger.info("cart icone changed to '5' ");
-
 	}
 
 	@And("User click on cart option")

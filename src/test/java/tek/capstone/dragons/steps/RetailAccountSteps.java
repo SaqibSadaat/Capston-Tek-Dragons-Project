@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -21,7 +19,6 @@ public class RetailAccountSteps extends CommonUtility {
 	public void userClickOnAccountOption() {
 		click(factory.homePage().account);
 		logger.info("user clicked on Account option");
-	 
 	}
 	@When("User update Name {string} and Phone {string}")
 	public void userUpdateNameAndPhone(String nameValue, String phoneValue) {
@@ -30,7 +27,6 @@ public class RetailAccountSteps extends CommonUtility {
 		clearTextUsingSendKeys(factory.accountPage().phoneInput);
 		sendText(factory.accountPage().phoneInput,phoneValue);
 		logger.info("user updated the name and the phone value");
-
 	}
 	@When("User click on Update button")
 	public void userClickOnUpdateButton() {
@@ -56,8 +52,7 @@ public class RetailAccountSteps extends CommonUtility {
 		sendText(factory.accountPage().NameInput,debitOrcredit.get(0).get("nameOnCard"));
 		selectByVisibleText(factory.accountPage().MonthInput,debitOrcredit.get(0).get("expirationMonth"));
 		selectByVisibleText(factory.accountPage().YearInput,debitOrcredit.get(0).get("expirationYear"));
-		sendText(factory.accountPage().SecurityInput,debitOrcredit.get(0).get("securityCode"));
-			
+		sendText(factory.accountPage().SecurityInput,debitOrcredit.get(0).get("securityCode"));	
 	}
 	@And("User click on Add your Card button")
 	public void userClickOnAddYoutCardBtn () {
@@ -73,7 +68,6 @@ public class RetailAccountSteps extends CommonUtility {
 	}
 	
 	//@updateCrad
-	
 	@And("User select the payment Card")
 	public void userSelectedThePaymentCard() {
 		click(factory.accountPage().SelectedpaymentCard);
@@ -84,7 +78,6 @@ public class RetailAccountSteps extends CommonUtility {
 	public void userClickonEditOption () {
 		click(factory.accountPage().Edit);
 		logger.info("user clicked on Edit");
-		
 	}
 	
 	@And("user edit information with below data")
@@ -92,7 +85,6 @@ public class RetailAccountSteps extends CommonUtility {
 		clearTextUsingSendKeys(factory.accountPage().CardNumber);
 		clearTextUsingSendKeys(factory.accountPage().NameOnCard);
 		clearTextUsingSendKeys(factory.accountPage().SecurityCode);
-		
 		
 		List<Map<String, String>> editBttn =data.asMaps(String.class,String.class);
 		
@@ -116,18 +108,15 @@ public class RetailAccountSteps extends CommonUtility {
 		slowDown();
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().PaymentMethodupdatedSuccessfully));
 		logger.info("Payment Method added successfully");
-	
 	}
 	
 	//@removeCard
 		//  Scenario: Verify User can remove Debit or Credit card
-		
 		@And("User click on remove option of card section")
 		public void userClickOnRemoveCardfromList () {
 			click(factory.accountPage().Remove);
 			logger.info("User clicked on remove option");
 			slowDown();
-			
 		}
 		
 		@Then("payment details should be removed")
@@ -136,9 +125,7 @@ public class RetailAccountSteps extends CommonUtility {
 			logger.info("Details removed successfully");
 		}
 		
-		
 	// add address 
-		
 		@When("User click on Add address option")
 		public void userClickOnAddAddressOption() {
 			click(factory.accountPage().addAddressLink);
@@ -159,74 +146,22 @@ public class RetailAccountSteps extends CommonUtility {
 		sendText(factory.accountPage().addressZipCodeInputField,fillAddress.get(0).get("zipCode"));
 		logger.info("User filled the field");
 		slowDown();
-		
 		}
+		
 		@When("User click Add Your Address button")
 		public void userClickAddYourAddressButton() {
 			click(factory.accountPage().addressAddAddressBttn);
 			logger.info("Add Address button was clicked successfully");
 		}
+		
 	   @And("a message should be displayed Address Added Successfully")
 			public void aMessageShouldBeDisplayedonScreen() {
 				slowDown();
 				Assert.assertTrue(isElementDisplayed(factory.accountPage().addressAddedSuccessfullyMssg));
-				logger.info("Address Added Successfully");
-				
+				logger.info("Address Added Successfully");	
 			}
-		    
-
-
-		// Edit credit debit card 
-		
-//		@And("User select the payment Card")
-//		public void userSelectedThePaymentCard() {
-//		click(factory.accountPage().SelectedpaymentCard);
-//		logger.info("User clicked on payment card");
-//		slowDown();
-//		}
-//		
-//		@And("User click on Edit option of card section")
-//		public void userClickonEditOption () {
-//		click(factory.accountPage().creditDebitCardEditBttn);
-//		logger.info("user clicked on Edit");
-//		   
-//		}
-//		
-//		@And("user edit information with below data")
-//		public void userEnterTheData(DataTable data) {
-//		clearTextUsingSendKeys(factory.accountPage().CardInput);
-//		clearTextUsingSendKeys(factory.accountPage().nameCardInputField);
-//		clearTextUsingSendKeys(factory.accountPage().securityCode);
-//
-//
-//		List<Map<String, String>> editBttn =data.asMaps(String.class,String.class);
-//
-//		sendText(factory.accountPage().CardInput,editBttn.get(0).get("cardNumber"));
-//		sendText(factory.accountPage().nameCardInputField,editBttn.get(0).get("nameOnCard"));
-//		selectByVisibleText(factory.accountPage().expiratiMonthInput,editBttn.get(0).get("expirationMonth"));
-//		selectByVisibleText(factory.accountPage().expiratiYear,editBttn.get(0).get("expirationYear"));
-//		sendText(factory.accountPage().securityCode,editBttn.get(0).get("securityCode"));
-//		logger.info("user successfully entred the info");
-//		slowDown();    
-//		}
-//		
-//		@And("user click on Update Your Card button")
-//		public void userClickonUpdateBttn () {
-//		click(factory.accountPage().paymentSubmitBtn);
-//		logger.info("user clicked on updateBttn");
-//		   
-//		}
-//		
-//		@Then("a message should be displayed Payment Method updated Successfully")
-//		public void aMessageShouldBeDisplayed() {
-//		slowDown();
-//		Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentMethodAddedSuccessfully));
-//		logger.info("Payment Method added successfully");
-
-//		}
 		
 		//@addressUpdated 
-		
 		@When("User click on edit address option")
 		public void userClickOnEditAddressOption() {
 			click(factory.accountPage().eiditAddressBttn);
@@ -254,7 +189,6 @@ public class RetailAccountSteps extends CommonUtility {
 		sendText(factory.accountPage().addressZipCodeInputField,EditNewAdd.get(0).get("zipCode"));
 		logger.info("User filled the field");
 		slowDown();
-		
 		}
 
 		@And("User click update Your Address button")
@@ -270,7 +204,8 @@ public class RetailAccountSteps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressUpdatedMessage));
 		logger.info("Your New Address Updated");
 		}
-		///////////////////////////////////////////////////
+
+//
 		
 		@When("User click on remove option of Address section")
 		public void userClickOnRemoveOptionOfAddressSection() {

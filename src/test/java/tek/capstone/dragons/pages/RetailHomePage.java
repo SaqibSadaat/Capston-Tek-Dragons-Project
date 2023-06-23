@@ -99,9 +99,6 @@ public class RetailHomePage extends BaseSetup {
 	    @FindBy(xpath="//option[text()='2']")
 	    public WebElement quantity2;
 	    
-	    
-	    
-	    
 	    @FindBy(id="addToCartBtn")
 	    public WebElement AddToCart;
 	    
@@ -148,9 +145,6 @@ public class RetailHomePage extends BaseSetup {
 	    @FindBy(id="addPaymentBtn")
 	    public WebElement addPaymentBtn;
 	    
-	    
-	    
-	        
 	    @FindBy(id="cardNumberInput")
 	    public WebElement CardInput;
 	    

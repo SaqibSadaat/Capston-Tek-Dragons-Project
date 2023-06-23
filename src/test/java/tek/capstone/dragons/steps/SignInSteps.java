@@ -5,15 +5,12 @@ import java.util.Map;
 
 import org.junit.Assert;
 
-import com.mysql.cj.x.protobuf.MysqlxResultset.Row;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.capstone.dragons.pages.POMFactory;
 import tek.capstone.dragons.utilities.CommonUtility;
-
 
 public class SignInSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
@@ -29,41 +26,42 @@ public class SignInSteps extends CommonUtility {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().tekschoolLogo));
 		logger.info("user is on retail website");
 	}
+	
 	@Given("User is on retial website")
 	public void userIsOnRetialWebsite() {
 		String expectdTitle = "React App";
 		String actualTitle = getTitle();
 		Assert.assertEquals(expectdTitle, actualTitle);
 		logger.info("Retail Website opened and verified"); 
-		
 }
 	
 	@When("User click on sign in option")
 	public void userClickOnSignInOption() {
 		click(factory.homePage().signin);
 		logger.info("user cliked on Sign In option");
-
 	}
+	
 	@And("User enter email {string} and password {string}")
 	public void userEnterEmailAndPassword(String emailValue, String passWordValue) {
 		sendText(factory.signInPage().emailField, emailValue);
 		sendText(factory.signInPage().passwordField,passWordValue);
 		logger.info("user entered email and password");
 	}
+	
 	@When("User click on login button")
 	public void userClickOnLoginButton() {
 		click(factory.signInPage().loginButton);
 		logger.info("user clicked on login button");
 	}
+	
 	@Then("user should be logged in into Account")
 	public void userShouldBeLoggedInIntoAccount() {
 		String expectdTitle = "React App";
 		String actualTitle = getTitle();
 		Assert.assertEquals(expectdTitle, actualTitle);
 		logger.info("user logged in into account");
-	
-	
 		}
+	
 		@Then("User click on Create New Account button")
 		public void userClickOnCreateNewAccountButton() {
 			click(factory.signInPage().newAccountBttn);
@@ -79,18 +77,14 @@ public class SignInSteps extends CommonUtility {
 			sendText(factory.signInPage().emailInputFeild, row.get("email"));
 			sendText(factory.signInPage().passwordInputField, row.get("password"));
 			sendText(factory.signInPage().confirmPasswordInputFeild, row.get("confirmPassword"));
-			logger.info("Registration Info Entered");
-			
-			
+			logger.info("Registration Info Entered");	
 			}
-			}
+}
 		
 		@Then("User click on signUp button")
 		public void userClickOnSignUpButton() {
 			click(factory.signInPage().signupBttn);
 			logger.info("User click on Create New Account button"); 
-
-
 }
 
 }	

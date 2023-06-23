@@ -3,7 +3,6 @@ Feature: Retail Home Page
   Background: 
     Given User is on retail website
    
-
   @AllSection
   Scenario: Verify Shop by Department sidebar
     When User click on All section
@@ -28,7 +27,7 @@ Feature: Retail Home Page
   @additem
   Scenario: Verify User can add an item to cart
     When User click on Sign in  Option
-    And user enter email 'alijankhan@gmail.com' and password 'Aliza123*23'
+    And user enter email 'saqibtestuser@test.us' and password 'Tek@12345'
     And User click on Login button
     And User should be logged in into account
     And User change the category to 'Smart Home'
@@ -39,30 +38,30 @@ Feature: Retail Home Page
     And User click add to Cart button
     Then the cart icon quantity should change to '2'
 
-  @placeAnOrder
+  @placeAnOrder #need to update before run
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     When User click on Sign in  Option
-    And User enter email 'alijankhan@gmail.com' and password 'Aliza123*23'
+    And User enter email 'saqibtestuser@test.us' and password 'Tek@12345'
     And User click on login button
     And user should be logged in into Account
     And User change the category to 'Smart Home'
     And User search for an item 'kasa outdoor smart plug'
     And User click on Search icon
     And User click on item
-    And User select quantity '2'
+    And User select quantity '4'
     And User click add to Cart button
-    Then the cart icon quantity should change to '2'
+    Then the cart icon quantity should change to '5'
     And User click on Cart option
     And User click on Proceed to Checkout button
     And User click Add a new address link for shipping address
     And User fill the new address form with below information
-      | Country       | FullName   | PhoneNumber | StreetAddress  | Apt  | City         | State    | ZipCode |
-      | United States | JANAN |  320-452-9874 | 125 nar Ave | 1203 | Lomita | California |   90717 |
+      | Country       | FullName   | PhoneNumber   | StreetAddress  | Apt  | City      | State      | ZipCode |
+      | United States | Sadaat     |  916-123-7654 | 6267 MLK Jr    | 217  | Sacrament | California |   95823 |
     And User click Add Your Address  button
     And User click Add a credit card or Debit Card for Payment method
     And User fill the Debit or credit card information
-      | CardNumber       | NameOnCard | ExpirationMonth | ExpirationYear | SecurityCode |
-      | 1245987542368542 | Ali Ahmad    |              9 |           2027 |          123 |
+      | CardNumber       | NameOnCard   | ExpirationMonth | ExpirationYear | SecurityCode |
+      | 1111222244445855 | Saqib Sadaat |              7  |           2027 |          123 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed Order Placed, Thanks
@@ -70,14 +69,14 @@ Feature: Retail Home Page
   @OrderAdded
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     When User click on Sign in option
-    And User enter email 'alijankhan@gmail.com' and password 'Aliza123*23'
+    And User enter email 'saqibtestuser@test.us' and password 'Tek@12345'
     And User click on login button
     And User should be logged in into Account
     And user change the category to 'Electronics'
     And User search for the item 'Apex Legends'
     And User click on search icon
     And User click on Item
-    And user select quantity '5'
+    And user select quantity '4'
     And User click add to cart button
     Then The cart icon quantity should change to '5'
     And User click on cart option
