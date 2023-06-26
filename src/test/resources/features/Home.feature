@@ -56,12 +56,12 @@ Feature: Retail Home Page
     And User click Add a new address link for shipping address
     And User fill the new address form with below information
       | Country       | FullName   | PhoneNumber   | StreetAddress  | Apt  | City      | State      | ZipCode |
-      | United States | Sadaat     |  916-123-7654 | 6267 MLK Jr    | 217  | Sacrament | California |   95823 |
+      | United States | Sadaat     |  916-123-8855 | 6288 MLK Jr    | 241  | Sacrament | California |   95824 |
     And User click Add Your Address  button
     And User click Add a credit card or Debit Card for Payment method
     And User fill the Debit or credit card information
       | CardNumber       | NameOnCard   | ExpirationMonth | ExpirationYear | SecurityCode |
-      | 1111222244445855 | Saqib Sadaat |              7  |           2027 |          123 |
+      | 1111222244449513 | Saqib Sadaat |              8  |           2029 |          124 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed Order Placed, Thanks
