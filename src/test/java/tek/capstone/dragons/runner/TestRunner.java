@@ -12,7 +12,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 		tags = "",
 		features = ("classpath:features"),
 		glue = "tek.capstone.dragons",
-		dryRun = false,
+		dryRun = true,
 		plugin = {
 				"pretty",
 				"html:target/htmlReports/cucumber-prettly.html",
