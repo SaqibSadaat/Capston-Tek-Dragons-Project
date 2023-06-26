@@ -11,7 +11,7 @@ Feature: Retail Account Page
   @updateProfileAndPhone #Need update before run
   Scenario: Verify User can update Profile Information
     #When User click on Account option
-    And User update Name 'Saqib Ali Sadaat' and Phone '910-715-8599'
+    And User update Name 'Saqib Sadaat' and Phone '910-718-1357'
     And User click on Update button
     Then user profile information should be updated
     
@@ -20,7 +20,7 @@ Feature: Retail Account Page
     And User click on Add a payment method link
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard   | expirationMonth | expirationYear | securityCode |
-      | 2552355346144748 | Saqib Sadaat |              10 |           2027 |          172 |
+      | 1256296258469325 | Saqib Sadaat |              11 |           2027 |          195 |
     And User click on Add your Card button
     Then a message should be displayed Payment Method added successfully
     
@@ -30,7 +30,7 @@ Feature: Retail Account Page
     And User click on Edit option of card section
     And user edit information with below data
       | cardNumber       | nameOnCard   | expirationMonth | expirationYear | securityCode |
-      | 2568993541259758 | Saqib Sadaat |              3  |           2027 |          186 |
+      | 1356296258469325 | Saqib Sadaat |              12 |           2027 |          156 |
     And user click on Update Your Card button
     Then a message should be displayed Payment Method updated Successfully
     
@@ -46,7 +46,7 @@ Feature: Retail Account Page
     And User click on Add address option
     And user fill new address form with below information
       | country      | fullName     | phoneNumber  | streetAddress | apt   | city       | state     | zipCode |
-      | United States| Saqib Sadaat | 916-123-9668 | 6570 50th St  | 14    | Sacramento | California| 95825   |
+      | United States| Saqib Sadaat | 916-123-8868 | 6565 55th St  | 13    | Sacramento | California| 95823   |
     And User click Add Your Address button
     And a message should be displayed Address Added Successfully
 
@@ -56,7 +56,7 @@ Feature: Retail Account Page
     And User click on edit address option
     And user update address form with below information
       | country        | fullName     | phoneNumber  | streetAddress | apt | city       | state      | zipCode |
-      | United States  | Saqib Sadaat | 916-715-8877 | 5850 Mack Rd  | 155 | Sacramento | California | 95823  |
+      | United States  | Saqib Sadaat | 916-715-8258 | 5855 Mack Rd  | 56  | Sacramento | California | 95823  |
     And User click update Your Address button
     Then a message should be displayed Address Updated Successfully
     
